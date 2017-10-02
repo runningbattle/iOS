@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C6F719F2B6CEB9EAA83D2C71 /* Pods_ezk_marathon_training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */; };
 		D40B931B1F81CF6500FDD362 /* その他_ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = D40B93181F81CF6500FDD362 /* その他_ピンク.png */; };
 		D40B931C1F81CF6500FDD362 /* ホーム_ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = D40B93191F81CF6500FDD362 /* ホーム_ピンク.png */; };
 		D40B931D1F81CF6500FDD362 /* ミッション_ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = D40B931A1F81CF6500FDD362 /* ミッション_ピンク.png */; };
@@ -23,6 +24,8 @@
 		D47884B41F7A688B009E2720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47884B21F7A688B009E2720 /* LaunchScreen.storyboard */; };
 		D47884BF1F7A688C009E2720 /* ezk_marathon_trainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884BE1F7A688C009E2720 /* ezk_marathon_trainingTests.swift */; };
 		D47884CA1F7A688C009E2720 /* ezk_marathon_trainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884C91F7A688C009E2720 /* ezk_marathon_trainingUITests.swift */; };
+		EA7FA4521C41B93134E8C901 /* Pods_ezk_marathon_trainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EBBA14865157B3933A7D43 /* Pods_ezk_marathon_trainingTests.framework */; };
+		EFD0DCC7D46255AD791526AE /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C0F99035BA7400A148F9E /* Pods_ezk_marathon_trainingUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07EBBA14865157B3933A7D43 /* Pods_ezk_marathon_trainingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		224C0F99035BA7400A148F9E /* Pods_ezk_marathon_trainingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		695C238AB18095805423FC3C /* Pods-ezk_marathon_training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.release.xcconfig"; sourceTree = "<group>"; };
+		9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.release.xcconfig"; sourceTree = "<group>"; };
+		AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.debug.xcconfig"; sourceTree = "<group>"; };
+		D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D40B93181F81CF6500FDD362 /* その他_ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "その他_ピンク.png"; path = "../../../Downloads/その他_ピンク.png"; sourceTree = "<group>"; };
 		D40B93191F81CF6500FDD362 /* ホーム_ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ホーム_ピンク.png"; path = "../../../Downloads/ホーム_ピンク.png"; sourceTree = "<group>"; };
 		D40B931A1F81CF6500FDD362 /* ミッション_ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ミッション_ピンク.png"; path = "../../../Downloads/ミッション_ピンク.png"; sourceTree = "<group>"; };
@@ -65,6 +76,7 @@
 		D47884C51F7A688C009E2720 /* ezk_marathon_trainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezk_marathon_trainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47884C91F7A688C009E2720 /* ezk_marathon_trainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezk_marathon_trainingUITests.swift; sourceTree = "<group>"; };
 		D47884CB1F7A688C009E2720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6F719F2B6CEB9EAA83D2C71 /* Pods_ezk_marathon_training.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +92,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA7FA4521C41B93134E8C901 /* Pods_ezk_marathon_trainingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,12 +100,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFD0DCC7D46255AD791526AE /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A1FF49E4513B79DBE8B6D5D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */,
+				695C238AB18095805423FC3C /* Pods-ezk_marathon_training.release.xcconfig */,
+				D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */,
+				A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */,
+				F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */,
+				9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BFE011B085B9FC02FB591C1E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */,
+				07EBBA14865157B3933A7D43 /* Pods_ezk_marathon_trainingTests.framework */,
+				224C0F99035BA7400A148F9E /* Pods_ezk_marathon_trainingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D478849D1F7A688B009E2720 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +137,8 @@
 				D47884BD1F7A688C009E2720 /* ezk_marathon_trainingTests */,
 				D47884C81F7A688C009E2720 /* ezk_marathon_trainingUITests */,
 				D47884A71F7A688B009E2720 /* Products */,
+				A1FF49E4513B79DBE8B6D5D1 /* Pods */,
+				BFE011B085B9FC02FB591C1E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -159,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47884CE1F7A688C009E2720 /* Build configuration list for PBXNativeTarget "ezk_marathon_training" */;
 			buildPhases = (
+				376DD5EAFA9C81FE7CDEEF65 /* [CP] Check Pods Manifest.lock */,
 				D47884A21F7A688B009E2720 /* Sources */,
 				D47884A31F7A688B009E2720 /* Frameworks */,
 				D47884A41F7A688B009E2720 /* Resources */,
+				4B1DFAF8F8D78BD54EFF23F3 /* [CP] Embed Pods Frameworks */,
+				DDFA8A5C4E3D9FC9E82DCFB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -176,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47884D11F7A688C009E2720 /* Build configuration list for PBXNativeTarget "ezk_marathon_trainingTests" */;
 			buildPhases = (
+				F9C7161A8A6585453FEB60B8 /* [CP] Check Pods Manifest.lock */,
 				D47884B61F7A688B009E2720 /* Sources */,
 				D47884B71F7A688B009E2720 /* Frameworks */,
 				D47884B81F7A688B009E2720 /* Resources */,
+				16FA40D91F52F8F2C6BC4294 /* [CP] Embed Pods Frameworks */,
+				8D37806C7C9D09FE16227C0C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -194,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47884D41F7A688C009E2720 /* Build configuration list for PBXNativeTarget "ezk_marathon_trainingUITests" */;
 			buildPhases = (
+				BEBAEEA410426EDC630AFE17 /* [CP] Check Pods Manifest.lock */,
 				D47884C11F7A688C009E2720 /* Sources */,
 				D47884C21F7A688C009E2720 /* Frameworks */,
 				D47884C31F7A688C009E2720 /* Resources */,
+				F47DE4CB7083739C8436C105 /* [CP] Embed Pods Frameworks */,
+				32FE4F92B37B2565C5AEAC0D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -288,6 +337,156 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16FA40D91F52F8F2C6BC4294 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32FE4F92B37B2565C5AEAC0D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		376DD5EAFA9C81FE7CDEEF65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezk_marathon_training-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4B1DFAF8F8D78BD54EFF23F3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PagingMenuController/PagingMenuController.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PagingMenuController.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D37806C7C9D09FE16227C0C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BEBAEEA410426EDC630AFE17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezk_marathon_trainingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DDFA8A5C4E3D9FC9E82DCFB8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F47DE4CB7083739C8436C105 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F9C7161A8A6585453FEB60B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezk_marathon_trainingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D47884A21F7A688B009E2720 /* Sources */ = {
@@ -448,6 +647,7 @@
 		};
 		D47884CF1F7A688C009E2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ezk_marathon_training/Info.plist;
@@ -460,6 +660,7 @@
 		};
 		D47884D01F7A688C009E2720 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 695C238AB18095805423FC3C /* Pods-ezk_marathon_training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ezk_marathon_training/Info.plist;
@@ -472,6 +673,7 @@
 		};
 		D47884D21F7A688C009E2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -486,6 +688,7 @@
 		};
 		D47884D31F7A688C009E2720 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -500,6 +703,7 @@
 		};
 		D47884D51F7A688C009E2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ezk_marathon_trainingUITests/Info.plist;
@@ -513,6 +717,7 @@
 		};
 		D47884D61F7A688C009E2720 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = ezk_marathon_trainingUITests/Info.plist;

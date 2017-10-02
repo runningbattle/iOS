@@ -1,0 +1,6 @@
+framework module Pods_ezk_marathon_trainingTests {
+  umbrella header "Pods-ezk_marathon_trainingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
