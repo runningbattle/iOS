@@ -9,33 +9,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
-            <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ezk_marathon_training" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-316" y="-1026"/>
-        </scene>
         <!--home-->
         <scene sceneID="zYz-01-4fy">
             <objects>
                 <viewControllerPlaceholder storyboardName="home" id="ufa-dv-shu" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="X6l-MV-1gF"/>
+                    <tabBarItem key="tabBarItem" title="home" image="home_pink" selectedImage="home_pink" id="X6l-MV-1gF"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nh-8x-Hvb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-10" y="354"/>
+            <point key="canvasLocation" x="37" y="348"/>
         </scene>
         <!--misson-->
         <scene sceneID="4hf-81-WXN">
@@ -55,7 +37,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JQW-sf-DcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="611"/>
+            <point key="canvasLocation" x="27" y="606"/>
         </scene>
         <!--others-->
         <scene sceneID="2df-JG-fS3">
@@ -65,7 +47,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vGX-U7-2le" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="48" y="791"/>
+            <point key="canvasLocation" x="32" y="722"/>
         </scene>
         <!--battle-->
         <scene sceneID="FFx-cU-Va1">
@@ -75,7 +57,7 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="J61-W7-Bgz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-11" y="923"/>
+            <point key="canvasLocation" x="38" y="828"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Kl3-DP-tOI">
@@ -87,11 +69,11 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
-                        <segue destination="Vo4-g2-ZDb" kind="relationship" relationship="viewControllers" id="JYw-x4-roZ"/>
-                        <segue destination="R3U-Dv-xG5" kind="relationship" relationship="viewControllers" id="q95-xo-ooB"/>
-                        <segue destination="NyJ-vx-7Cj" kind="relationship" relationship="viewControllers" id="cKf-DC-OiW"/>
-                        <segue destination="Tso-cE-WuA" kind="relationship" relationship="viewControllers" id="vIn-Yc-agu"/>
                         <segue destination="ufa-dv-shu" kind="relationship" relationship="viewControllers" id="o7r-D7-8nR"/>
+                        <segue destination="NyJ-vx-7Cj" kind="relationship" relationship="viewControllers" id="cKf-DC-OiW"/>
+                        <segue destination="R3U-Dv-xG5" kind="relationship" relationship="viewControllers" id="q95-xo-ooB"/>
+                        <segue destination="Tso-cE-WuA" kind="relationship" relationship="viewControllers" id="vIn-Yc-agu"/>
+                        <segue destination="Vo4-g2-ZDb" kind="relationship" relationship="viewControllers" id="JYw-x4-roZ"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EIE-5I-EqZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -99,4 +81,7 @@
             <point key="canvasLocation" x="-982" y="670"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="home_pink" width="28" height="28"/>
+    </resources>
 </document>
