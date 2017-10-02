@@ -19,19 +19,19 @@ class ViewController: UIViewController {
         let scene = GameScene()
         
         // take View as SKView type from View Controller
-        let view = self.view as SKView
+//        let view = self.view as SKView
         
         // indicate FPS
-        view.showsFPS = true
-        
-        // indicate number of Node
-        view.showNodeCount = true
-        
-        // adjust scene size to view
-        scene.size = view.frame.size
-        
-        // indicate scene on View
-        view.presentScene(scene)
+//        view.showsFPS = true
+//        
+//        // indicate number of Node
+//        view.showNodeCount = true
+//        
+//        // adjust scene size to view
+//        scene.size = view.frame.size
+//        
+//        // indicate scene on View
+//        view.presentScene(scene)
     }
 
     override func didReceiveMemoryWarning() {

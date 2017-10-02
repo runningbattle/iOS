@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D40B931B1F81CF6500FDD362 /* その他_ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = D40B93181F81CF6500FDD362 /* その他_ピンク.png */; };
+		D40B931C1F81CF6500FDD362 /* ホーム_ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = D40B93191F81CF6500FDD362 /* ホーム_ピンク.png */; };
+		D40B931D1F81CF6500FDD362 /* ミッション_ピンク.png in Resources */ = {isa = PBXBuildFile; fileRef = D40B931A1F81CF6500FDD362 /* ミッション_ピンク.png */; };
+		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
+		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
+		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
+		D40B93251F82213F00FDD362 /* battle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93241F82213F00FDD362 /* battle.storyboard */; };
+		D40B93271F82224B00FDD362 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93261F82224B00FDD362 /* home.storyboard */; };
 		D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */; };
 		D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884A91F7A688B009E2720 /* AppDelegate.swift */; };
 		D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884AB1F7A688B009E2720 /* ViewController.swift */; };
@@ -35,6 +43,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D40B93181F81CF6500FDD362 /* その他_ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "その他_ピンク.png"; path = "../../../Downloads/その他_ピンク.png"; sourceTree = "<group>"; };
+		D40B93191F81CF6500FDD362 /* ホーム_ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ホーム_ピンク.png"; path = "../../../Downloads/ホーム_ピンク.png"; sourceTree = "<group>"; };
+		D40B931A1F81CF6500FDD362 /* ミッション_ピンク.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ミッション_ピンク.png"; path = "../../../Downloads/ミッション_ピンク.png"; sourceTree = "<group>"; };
+		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
+		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
+		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
+		D40B93241F82213F00FDD362 /* battle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = battle.storyboard; sourceTree = "<group>"; };
+		D40B93261F82224B00FDD362 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamescene_home.swift; sourceTree = "<group>"; };
 		D47884A61F7A688B009E2720 /* ezk_marathon_training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezk_marathon_training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47884A91F7A688B009E2720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -102,10 +118,18 @@
 				D47884A91F7A688B009E2720 /* AppDelegate.swift */,
 				D47884AB1F7A688B009E2720 /* ViewController.swift */,
 				D47884AD1F7A688B009E2720 /* Main.storyboard */,
+				D40B93261F82224B00FDD362 /* home.storyboard */,
+				D40B93241F82213F00FDD362 /* battle.storyboard */,
+				D40B931E1F821C4900FDD362 /* ranking.storyboard */,
+				D40B93221F82206100FDD362 /* others.storyboard */,
 				D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */,
+				D40B93181F81CF6500FDD362 /* その他_ピンク.png */,
+				D40B93191F81CF6500FDD362 /* ホーム_ピンク.png */,
+				D40B931A1F81CF6500FDD362 /* ミッション_ピンク.png */,
 				D47884B01F7A688B009E2720 /* Assets.xcassets */,
 				D47884B21F7A688B009E2720 /* LaunchScreen.storyboard */,
 				D47884B51F7A688B009E2720 /* Info.plist */,
+				D40B93201F821F6E00FDD362 /* misson.storyboard */,
 			);
 			path = ezk_marathon_training;
 			sourceTree = "<group>";
@@ -236,8 +260,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D47884B41F7A688B009E2720 /* LaunchScreen.storyboard in Resources */,
+				D40B931C1F81CF6500FDD362 /* ホーム_ピンク.png in Resources */,
+				D40B93231F82206100FDD362 /* others.storyboard in Resources */,
+				D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */,
+				D40B93251F82213F00FDD362 /* battle.storyboard in Resources */,
+				D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */,
+				D40B931B1F81CF6500FDD362 /* その他_ピンク.png in Resources */,
 				D47884B11F7A688B009E2720 /* Assets.xcassets in Resources */,
 				D47884AF1F7A688B009E2720 /* Main.storyboard in Resources */,
+				D40B93271F82224B00FDD362 /* home.storyboard in Resources */,
+				D40B931D1F81CF6500FDD362 /* ミッション_ピンク.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
