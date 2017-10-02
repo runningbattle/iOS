@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Battle View Controller-->
         <scene sceneID="GH2-pf-KZS">
             <objects>
-                <viewController id="mTx-GH-Ie6" sceneMemberID="viewController">
+                <viewController id="mTx-GH-Ie6" customClass="BattleViewController" customModule="ezk_marathon_training" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dWD-3P-ciN"/>
                         <viewControllerLayoutGuide type="bottom" id="rgG-DR-4cJ"/>
@@ -112,6 +112,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="enemyHpView" destination="YP3-Fg-f9I" id="YzF-E4-oWv"/>
+                        <outlet property="timerLabel" destination="dLT-jL-gY5" id="5b2-Aw-O8G"/>
+                        <outlet property="youHpView" destination="5h6-wt-2Cb" id="aO0-WT-mJT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="izc-Iz-Hax" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
