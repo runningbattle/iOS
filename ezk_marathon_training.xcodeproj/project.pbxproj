@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C49D42BB1F82425900051D5A /* DairyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42B81F82425900051D5A /* DairyMissionViewController.swift */; };
-		C49D42BC1F82425900051D5A /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42B91F82425900051D5A /* MissionViewController.swift */; };
+		C49D42BE1F8251DB00051D5A /* DailyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */; };
+		C49D42C01F82524F00051D5A /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42BF1F82524F00051D5A /* MissionViewController.swift */; };
+		C49D42C21F82531900051D5A /* WeeklyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42C11F82531900051D5A /* WeeklyMissionViewController.swift */; };
+		C49D42C41F82533600051D5A /* MainMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42C31F82533600051D5A /* MainMissionViewController.swift */; };
 		C6F719F2B6CEB9EAA83D2C71 /* Pods_ezk_marathon_training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
@@ -52,8 +54,10 @@
 		9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.release.xcconfig"; sourceTree = "<group>"; };
 		AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.debug.xcconfig"; sourceTree = "<group>"; };
-		C49D42B81F82425900051D5A /* DairyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DairyMissionViewController.swift; path = ../../../../.Trash/DairyMissionViewController.swift; sourceTree = "<group>"; };
-		C49D42B91F82425900051D5A /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MissionViewController.swift; path = ../../../../.Trash/MissionViewController.swift; sourceTree = "<group>"; };
+		C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMissionViewController.swift; sourceTree = "<group>"; };
+		C49D42BF1F82524F00051D5A /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
+		C49D42C11F82531900051D5A /* WeeklyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyMissionViewController.swift; sourceTree = "<group>"; };
+		C49D42C31F82533600051D5A /* MainMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMissionViewController.swift; sourceTree = "<group>"; };
 		D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.debug.xcconfig"; sourceTree = "<group>"; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
@@ -154,8 +158,10 @@
 			isa = PBXGroup;
 			children = (
 				D40B93201F821F6E00FDD362 /* misson.storyboard */,
-				C49D42B91F82425900051D5A /* MissionViewController.swift */,
-				C49D42B81F82425900051D5A /* DairyMissionViewController.swift */,
+				C49D42BF1F82524F00051D5A /* MissionViewController.swift */,
+				C49D42C11F82531900051D5A /* WeeklyMissionViewController.swift */,
+				C49D42C31F82533600051D5A /* MainMissionViewController.swift */,
+				C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */,
 				D47884A91F7A688B009E2720 /* AppDelegate.swift */,
 				D47884AB1F7A688B009E2720 /* ViewController.swift */,
 				D47884AD1F7A688B009E2720 /* Main.storyboard */,
@@ -489,8 +495,10 @@
 			files = (
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
-				C49D42BB1F82425900051D5A /* DairyMissionViewController.swift in Sources */,
-				C49D42BC1F82425900051D5A /* MissionViewController.swift in Sources */,
+				C49D42C01F82524F00051D5A /* MissionViewController.swift in Sources */,
+				C49D42C41F82533600051D5A /* MainMissionViewController.swift in Sources */,
+				C49D42BE1F8251DB00051D5A /* DailyMissionViewController.swift in Sources */,
+				C49D42C21F82531900051D5A /* WeeklyMissionViewController.swift in Sources */,
 				D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
