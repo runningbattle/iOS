@@ -65,7 +65,7 @@ extension UIView {
     }
 }
 
-@IBDesignable open class BorderView: UIView{
+@IBDesignable class BorderView: UIView{
 
 }
 
