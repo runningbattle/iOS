@@ -57,6 +57,11 @@ private struct MissionPagingMenuOptions: PagingMenuControllerCustomizable {
         var displayMode: MenuDisplayMode {
             return .segmentedControl
         }
+        
+        var itemWidthMode: MenuItemWidthMode {
+            return .fixed(width: 50.0)
+        }
+        
         var itemsOptions: [MenuItemViewCustomizable] {
             return [DailyMission(), WeeklyMission(), MainMission()]
         }
