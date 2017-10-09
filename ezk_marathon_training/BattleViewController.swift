@@ -54,26 +54,31 @@ class BattleViewController: UIViewController {
         
         //勝ち
         if enemyHpGuage.progress == 0.0{
-            youLoseOrWin(true)
+            battleAlert("win")
         }
     }
+    @IBAction func tappedStop(_ sender: Any) {
+        battleAlert("pause")
+    }
+    
+    
     func youDamageHp(timer : Timer) {
         you_hp -= 2
         youHpGuage.progress = you_hp / you_max_hp
         
         //負け
         if youHpGuage.progress == 0.0{
-            youLoseOrWin(false)
+            battleAlert("lose")
         }
 
     }
-    func youLoseOrWin(_ win : Bool){
+    func battleAlert(_ judge : String){
         hp_timer.invalidate()       //timer停止
         timer.invalidate()       //timer停止
 
         let alert : UIAlertController
         //再挑戦ボタン
-        if !win{
+        if judge == "lose"{
             alert = UIAlertController(title: "ゲームオーバー", message: "", preferredStyle:  UIAlertControllerStyle.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "再挑戦", style: UIAlertActionStyle.default, handler:{
                 // ボタンが押された時の処理（クロージャ実装）
@@ -82,7 +87,7 @@ class BattleViewController: UIViewController {
                 self.guageInit()
             })
             alert.addAction(defaultAction)
-        } else {
+        } else if judge == "win"{
             alert = UIAlertController(title: "勝利", message: "", preferredStyle:  UIAlertControllerStyle.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "次へ", style: UIAlertActionStyle.default, handler:{
                 // ボタンが押された時の処理（クロージャ実装）
@@ -91,7 +96,18 @@ class BattleViewController: UIViewController {
                 self.guageInit()
             })
             alert.addAction(defaultAction)
+        }else{
+            alert = UIAlertController(title: "一時停止", message: "", preferredStyle:  UIAlertControllerStyle.alert)
+            let defaultAction: UIAlertAction = UIAlertAction(title: "再開", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("再開")
+                self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+                self.hp_timer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
 
+            })
+            alert.addAction(defaultAction)
+            
         }
         // 終了ボタン
         let cancelAction: UIAlertAction = UIAlertAction(title: "終了", style: UIAlertActionStyle.cancel, handler:{
@@ -117,7 +133,7 @@ extension BattleViewController{
         timerLabel.text = str
         if count == 0{
             timer.invalidate()    //タイマーを止めるコード
-            youLoseOrWin(false)
+            battleAlert("lose")
         }
     }
 
