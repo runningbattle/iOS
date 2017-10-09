@@ -17,11 +17,12 @@ class BattleViewController: UIViewController {
     
     var timer = Timer()
     var hp_timer = Timer()
-    var count : Float = 15
+    var count : Float = 5
     var enemy_max_hp:Float = 50.0
     var enemy_hp:Float = 50.0
     var you_max_hp:Float = 50.0
     var you_hp:Float = 50.0
+    var max_count : Float = 5
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +32,7 @@ class BattleViewController: UIViewController {
         let sanbai = CGAffineTransform(scaleX:1.0, y:3.0)
         enemyHpGuage.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI)).concatenating(sanbai)
         
-        onUpdate(timer: timer)
+//        onUpdate(timer: timer)
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
         hp_timer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
         
@@ -48,15 +49,60 @@ class BattleViewController: UIViewController {
     }
     
     @IBAction func tapedEnemyButton(_ sender: Any) {
-        enemy_hp -= 1
+        enemy_hp -= 10
         enemyHpGuage.progress = enemy_hp / enemy_max_hp
+        
+        //勝ち
+        if enemyHpGuage.progress == 0.0{
+            youLoseOrWin(true)
+        }
     }
     func youDamageHp(timer : Timer) {
         you_hp -= 2
         youHpGuage.progress = you_hp / you_max_hp
+        
+        //負け
+        if youHpGuage.progress == 0.0{
+            youLoseOrWin(false)
+        }
 
     }
-    
+    func youLoseOrWin(_ win : Bool){
+        hp_timer.invalidate()       //timer停止
+        timer.invalidate()       //timer停止
+
+        let alert : UIAlertController
+        //再挑戦ボタン
+        if !win{
+            alert = UIAlertController(title: "ゲームオーバー", message: "", preferredStyle:  UIAlertControllerStyle.alert)
+            let defaultAction: UIAlertAction = UIAlertAction(title: "再挑戦", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("再挑戦")
+                self.guageInit()
+            })
+            alert.addAction(defaultAction)
+        } else {
+            alert = UIAlertController(title: "勝利", message: "", preferredStyle:  UIAlertControllerStyle.alert)
+            let defaultAction: UIAlertAction = UIAlertAction(title: "次へ", style: UIAlertActionStyle.default, handler:{
+                // ボタンが押された時の処理（クロージャ実装）
+                (action: UIAlertAction!) -> Void in
+                print("次へ")
+                self.guageInit()
+            })
+            alert.addAction(defaultAction)
+
+        }
+        // 終了ボタン
+        let cancelAction: UIAlertAction = UIAlertAction(title: "終了", style: UIAlertActionStyle.cancel, handler:{
+            // ボタンが押された時の処理（クロージャ実装）
+            (action: UIAlertAction!) -> Void in
+            print("終了")
+        })
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+
+    }
 }
 
 extension BattleViewController{
@@ -69,11 +115,26 @@ extension BattleViewController{
         let str = String(format: "%.0f", count)
         // countLabelに表示するコード
         timerLabel.text = str
-//            //countLabelが”0”になったらタイマーを止めてgameoverが表示されるようにする
-//            if count == 0{
-//                timer.invalidate()    //タイマーを止めるコード
-//                gameOver.isHidden = false
-//            }
+        if count == 0{
+            timer.invalidate()    //タイマーを止めるコード
+            youLoseOrWin(false)
+        }
     }
 
+    //初期化
+    func guageInit(){
+    //ゲージの初期化
+    self.enemyHpGuage.progress = self.enemy_max_hp
+    self.youHpGuage.progress = self.you_max_hp
+    self.enemy_hp = self.enemy_max_hp
+    self.you_hp = self.you_max_hp
+    
+    //timer初期化
+    self.count = self.max_count
+    let str = String(format: "%.0f", self.max_count)
+    
+    self.timerLabel.text = str
+    self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+    self.hp_timer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+    }
 }
