@@ -25,6 +25,9 @@
                                 <rect key="frame" x="297" y="28" width="62" height="65"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="stop/play"/>
+                                <connections>
+                                    <action selector="tappedStop:" destination="mTx-GH-Ie6" eventType="touchUpInside" id="HxR-Rj-r0a"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="TIME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XZo-j5-VvP">
                                 <rect key="frame" x="152" y="42" width="71" height="37"/>
