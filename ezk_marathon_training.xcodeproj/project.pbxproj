@@ -10,6 +10,8 @@
 		A03391B51F823F240036DE2B /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03391B41F823F240036DE2B /* BorderView.swift */; };
 		A038DFC91F8245CD00A146DB /* battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFC81F8245CD00A146DB /* battle.swift */; };
 		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
+		A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A084B1EC1F8CE97F00AAA808 /* View.xib */; };
+		A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
 		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
@@ -46,6 +48,8 @@
 		A03391B41F823F240036DE2B /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		A038DFC81F8245CD00A146DB /* battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = battle.swift; sourceTree = "<group>"; };
 		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		A084B1EC1F8CE97F00AAA808 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
 		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
@@ -121,8 +125,10 @@
 				D47884AD1F7A688B009E2720 /* Main.storyboard */,
 				D40B93261F82224B00FDD362 /* home.storyboard */,
 				D40B93241F82213F00FDD362 /* battle.storyboard */,
+				A084B1EC1F8CE97F00AAA808 /* View.xib */,
 				A038DFC81F8245CD00A146DB /* battle.swift */,
 				A038DFCA1F825F4100A146DB /* BattleViewController.swift */,
+				A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */,
 				D40B931E1F821C4900FDD362 /* ranking.storyboard */,
 				D40B93221F82206100FDD362 /* others.storyboard */,
 				D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */,
@@ -263,6 +269,7 @@
 				D40B93231F82206100FDD362 /* others.storyboard in Resources */,
 				D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */,
 				D40B93251F82213F00FDD362 /* battle.storyboard in Resources */,
+				A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */,
 				D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */,
 				D47884B11F7A688B009E2720 /* Assets.xcassets in Resources */,
 				D47884AF1F7A688B009E2720 /* Main.storyboard in Resources */,
@@ -294,6 +301,7 @@
 				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
 				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
+				A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
 				D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */,
 				A038DFC91F8245CD00A146DB /* battle.swift in Sources */,
@@ -508,7 +516,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ezk_marathon_trainingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ezk-marathon.ezk-marathon-trainingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -521,7 +531,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ezk_marathon_trainingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ezk-marathon.ezk-marathon-trainingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";

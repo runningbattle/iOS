@@ -17,12 +17,14 @@ class BattleViewController: UIViewController {
     
     var timer = Timer()
     var hp_timer = Timer()
-    var count : Float = 5
+    var count : Float = 10
     var enemy_max_hp:Float = 50.0
     var enemy_hp:Float = 50.0
     var you_max_hp:Float = 50.0
     var you_hp:Float = 50.0
-    var max_count : Float = 5
+    var max_count : Float = 10
+    var itemPopUpView:ItemPopUpView? = nil
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,9 +41,10 @@ class BattleViewController: UIViewController {
         enemyHpGuage.progress = 1.0
         youHpGuage.progress = 1.0
 
+        itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
         
-        // Do any additional setup after loading the view.
-    }
+        }
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -49,7 +52,7 @@ class BattleViewController: UIViewController {
     }
     
     @IBAction func tapedEnemyButton(_ sender: Any) {
-        enemy_hp -= 10
+        enemy_hp -= 5
         enemyHpGuage.progress = enemy_hp / enemy_max_hp
         
         //勝ち
@@ -59,6 +62,10 @@ class BattleViewController: UIViewController {
     }
     @IBAction func tappedStop(_ sender: Any) {
         battleAlert("pause")
+    }
+    @IBAction func itemButton(_ sender: Any) {
+        self.view.addSubview(itemPopUpView!)
+
     }
     
     
@@ -139,18 +146,18 @@ extension BattleViewController{
 
     //初期化
     func guageInit(){
-    //ゲージの初期化
-    self.enemyHpGuage.progress = self.enemy_max_hp
-    self.youHpGuage.progress = self.you_max_hp
-    self.enemy_hp = self.enemy_max_hp
-    self.you_hp = self.you_max_hp
-    
-    //timer初期化
-    self.count = self.max_count
-    let str = String(format: "%.0f", self.max_count)
-    
-    self.timerLabel.text = str
-    self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
-    self.hp_timer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+        //ゲージの初期化
+        self.enemyHpGuage.progress = self.enemy_max_hp
+        self.youHpGuage.progress = self.you_max_hp
+        self.enemy_hp = self.enemy_max_hp
+        self.you_hp = self.you_max_hp
+        
+        //timer初期化
+        self.count = self.max_count
+        let str = String(format: "%.0f", self.max_count)
+        
+        self.timerLabel.text = str
+        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+        self.hp_timer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
     }
 }
