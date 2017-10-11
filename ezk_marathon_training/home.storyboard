@@ -12,7 +12,7 @@
         <!--home-->
         <scene sceneID="FIn-Mn-pXb">
             <objects>
-                <viewController id="Vr6-MP-G46" sceneMemberID="viewController">
+                <viewController id="Vr6-MP-G46" customClass="HomeViewController" customModule="ezk_marathon_training" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="HOw-w4-lUZ"/>
                         <viewControllerLayoutGuide type="bottom" id="G3F-Ch-shK"/>
@@ -63,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="所持コイン" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuO-bQ-W9w">
-                                <rect key="frame" x="189" y="9" width="161" height="30"/>
+                                <rect key="frame" x="189" y="9" width="93" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                 <color key="textColor" red="0.97804109380000004" green="0.97670762519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -169,11 +169,22 @@
                                 <color key="textColor" red="0.97804109380000004" green="0.97670762519999998" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T48-og-cTu">
+                                <rect key="frame" x="313" y="110" width="46" height="45"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Item"/>
+                                <connections>
+                                    <action selector="itemButtonTapped:" destination="Vr6-MP-G46" eventType="touchUpInside" id="sF9-tq-Llv"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="home" image="home_pink" selectedImage="home_pink" id="vpP-0l-rK4"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="coin_label" destination="FlP-IN-B6I" id="K4R-gj-C6h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TM4-ne-ddz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

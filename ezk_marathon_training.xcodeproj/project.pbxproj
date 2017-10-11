@@ -11,6 +11,8 @@
 		A038DFC91F8245CD00A146DB /* battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFC81F8245CD00A146DB /* battle.swift */; };
 		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
 		D404EE2A1F889A270035C55A /* Homedata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404EE291F889A270035C55A /* Homedata.swift */; };
+		D40737A01F8E2E1B0054531B /* ItemPurchaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D407379F1F8E2E1B0054531B /* ItemPurchaseView.xib */; };
+		D40737A21F8E32020054531B /* ItemPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40737A11F8E32020054531B /* ItemPurchaseView.swift */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
 		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
@@ -26,7 +28,6 @@
 		D47884CA1F7A688C009E2720 /* ezk_marathon_trainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884C91F7A688C009E2720 /* ezk_marathon_trainingUITests.swift */; };
 		D48C3B851F87B4D4009DF36B /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D48C3B841F87B4D4009DF36B /* HealthKit.framework */; };
 		D48C3B871F87BB2D009DF36B /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C3B861F87BB2D009DF36B /* HomeViewController.swift */; };
-		D48C3B891F87C04D009DF36B /* ItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48C3B881F87C04D009DF36B /* ItemView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		A038DFC81F8245CD00A146DB /* battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = battle.swift; sourceTree = "<group>"; };
 		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		D404EE291F889A270035C55A /* Homedata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homedata.swift; sourceTree = "<group>"; };
+		D407379F1F8E2E1B0054531B /* ItemPurchaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPurchaseView.xib; sourceTree = "<group>"; };
+		D40737A11F8E32020054531B /* ItemPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPurchaseView.swift; sourceTree = "<group>"; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
 		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
@@ -73,7 +76,6 @@
 		D48C3B801F87B048009DF36B /* ezk_marathon_training.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ezk_marathon_training.entitlements; sourceTree = "<group>"; };
 		D48C3B841F87B4D4009DF36B /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		D48C3B861F87BB2D009DF36B /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D48C3B881F87C04D009DF36B /* ItemView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 		D478849D1F7A688B009E2720 = {
 			isa = PBXGroup;
 			children = (
+				D40737A11F8E32020054531B /* ItemPurchaseView.swift */,
 				D47884A81F7A688B009E2720 /* ezk_marathon_training */,
 				D47884BD1F7A688C009E2720 /* ezk_marathon_trainingTests */,
 				D47884C81F7A688C009E2720 /* ezk_marathon_trainingUITests */,
@@ -134,7 +137,7 @@
 				D47884AD1F7A688B009E2720 /* Main.storyboard */,
 				D40B93261F82224B00FDD362 /* home.storyboard */,
 				D48C3B861F87BB2D009DF36B /* HomeViewController.swift */,
-				D48C3B881F87C04D009DF36B /* ItemView.swift */,
+				D407379F1F8E2E1B0054531B /* ItemPurchaseView.xib */,
 				D40B93241F82213F00FDD362 /* battle.storyboard */,
 				A038DFC81F8245CD00A146DB /* battle.swift */,
 				A038DFCA1F825F4100A146DB /* BattleViewController.swift */,
@@ -291,6 +294,7 @@
 				D47884B41F7A688B009E2720 /* LaunchScreen.storyboard in Resources */,
 				D40B93231F82206100FDD362 /* others.storyboard in Resources */,
 				D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */,
+				D40737A01F8E2E1B0054531B /* ItemPurchaseView.xib in Resources */,
 				D40B93251F82213F00FDD362 /* battle.storyboard in Resources */,
 				D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */,
 				D47884B11F7A688B009E2720 /* Assets.xcassets in Resources */,
@@ -322,8 +326,8 @@
 			files = (
 				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
 				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
+				D40737A21F8E32020054531B /* ItemPurchaseView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
-				D48C3B891F87C04D009DF36B /* ItemView.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
 				D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */,
 				D48C3B871F87BB2D009DF36B /* HomeViewController.swift in Sources */,

@@ -11,12 +11,18 @@ import UIKit
 
 class HomeViewController: UIViewController {
     
+    @IBOutlet weak var coin_label: UILabel!
+    var coin: Int = 0
+    var itemPurchaseView:ItemPurchaseView? = nil
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        itemPurchaseView = UINib(nibName: "ItemPurchaseView", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPurchaseView
         
-        let balloon = BalloonView(frame: CGRectMake((view.bounds.size.width - 280) / 2, 100, 280, 100))
-        balloon.backgroundColor = UIColor.whiteColor()
-        view.addSubview(balloon)
+        
+    }
+    @IBAction func itemButtonTapped(_ sender: Any) {
+        self.view.addSubview(itemPurchaseView!)
     }
     
 }
