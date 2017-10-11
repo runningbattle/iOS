@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // create scene
-        let scene = GameScene()
+//        let scene = GameScene()
         
         // take View as SKView type from View Controller
 //        let view = self.view as SKView
