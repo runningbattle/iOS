@@ -14,14 +14,18 @@ class BattleViewController: UIViewController {
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var enemyHpGuage: UIProgressView!
     @IBOutlet weak var youHpGuage: UIProgressView!
+    @IBOutlet weak var enemyMaxHpLabel: UILabel!
+    @IBOutlet weak var youMaxHpLabel: UILabel!
+    @IBOutlet weak var enemyHpLabel: UILabel!
+    @IBOutlet weak var youHpLabel: UILabel!
     
     var timer = Timer()
     var hp_timer = Timer()
     var count : Float = 10
-    var enemy_max_hp:Float = 50.0
-    var enemy_hp:Float = 50.0
-    var you_max_hp:Float = 50.0
-    var you_hp:Float = 50.0
+    var enemy_max_hp:Float = 50
+    var enemy_hp:Float = 50
+    var you_max_hp:Float = 50
+    var you_hp:Float = 50
     var max_count : Float = 10
     var itemPopUpView:ItemPopUpView? = nil
 
@@ -40,6 +44,15 @@ class BattleViewController: UIViewController {
         
         enemyHpGuage.progress = 1.0
         youHpGuage.progress = 1.0
+        
+        let enemy_max_str = String(format: "%.0f", enemy_max_hp)
+        enemyMaxHpLabel.text = enemy_max_str
+        let you_max_str = String(format: "%.0f", you_max_hp)
+        youMaxHpLabel.text = you_max_str
+        let enemy_str = String(format: "%.0f", enemy_max_hp)
+        enemyHpLabel.text = enemy_str
+        let you_str = String(format: "%.0f", you_max_hp)
+        youHpLabel.text = you_str
 
         itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
         
@@ -55,6 +68,10 @@ class BattleViewController: UIViewController {
         enemy_hp -= 5
         enemyHpGuage.progress = enemy_hp / enemy_max_hp
         
+        //label表示
+        let str = String(format: "%.0f", enemy_hp)
+        enemyHpLabel.text = str
+        
         //勝ち
         if enemyHpGuage.progress == 0.0{
             battleAlert("win")
@@ -63,15 +80,21 @@ class BattleViewController: UIViewController {
     @IBAction func tappedStop(_ sender: Any) {
         battleAlert("pause")
     }
+    
+    //item表示
     @IBAction func itemButton(_ sender: Any) {
         self.view.addSubview(itemPopUpView!)
-
     }
     
     
     func youDamageHp(timer : Timer) {
         you_hp -= 2
         youHpGuage.progress = you_hp / you_max_hp
+        
+        //label表示
+        let str = String(format: "%.0f", you_hp)
+        youHpLabel.text = str
+
         
         //負け
         if youHpGuage.progress == 0.0{
@@ -151,6 +174,12 @@ extension BattleViewController{
         self.youHpGuage.progress = self.you_max_hp
         self.enemy_hp = self.enemy_max_hp
         self.you_hp = self.you_max_hp
+        
+        //labelの初期化
+        let enemy_str = String(format: "%.0f", self.enemy_hp)
+        self.enemyHpLabel.text = enemy_str
+        let you_str = String(format: "%.0f", self.you_hp)
+        self.youHpLabel.text = you_str
         
         //timer初期化
         self.count = self.max_count
