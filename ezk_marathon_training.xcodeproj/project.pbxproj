@@ -1,5 +1,4 @@
 // !$*UTF8*$!
-{
 	archiveVersion = 1;
 	classes = {
 	};
@@ -7,11 +6,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C49D42BE1F8251DB00051D5A /* DailyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */; };
-		C49D42C01F82524F00051D5A /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42BF1F82524F00051D5A /* MissionViewController.swift */; };
-		C49D42C21F82531900051D5A /* WeeklyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42C11F82531900051D5A /* WeeklyMissionViewController.swift */; };
-		C49D42C41F82533600051D5A /* MainMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C49D42C31F82533600051D5A /* MainMissionViewController.swift */; };
-		C6F719F2B6CEB9EAA83D2C71 /* Pods_ezk_marathon_training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */; };
+		A03391B51F823F240036DE2B /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03391B41F823F240036DE2B /* BorderView.swift */; };
+		A038DFC91F8245CD00A146DB /* battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFC81F8245CD00A146DB /* battle.swift */; };
+		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
+		A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A084B1EC1F8CE97F00AAA808 /* View.xib */; };
+		A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
 		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
@@ -47,18 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		07EBBA14865157B3933A7D43 /* Pods_ezk_marathon_trainingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		224C0F99035BA7400A148F9E /* Pods_ezk_marathon_trainingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		695C238AB18095805423FC3C /* Pods-ezk_marathon_training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.release.xcconfig"; sourceTree = "<group>"; };
-		9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.release.xcconfig"; sourceTree = "<group>"; };
-		A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.release.xcconfig"; sourceTree = "<group>"; };
-		AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.debug.xcconfig"; sourceTree = "<group>"; };
-		C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMissionViewController.swift; sourceTree = "<group>"; };
-		C49D42BF1F82524F00051D5A /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
-		C49D42C11F82531900051D5A /* WeeklyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyMissionViewController.swift; sourceTree = "<group>"; };
-		C49D42C31F82533600051D5A /* MainMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMissionViewController.swift; sourceTree = "<group>"; };
-		D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		A03391B41F823F240036DE2B /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
+		A038DFC81F8245CD00A146DB /* battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = battle.swift; sourceTree = "<group>"; };
+		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
+		A084B1EC1F8CE97F00AAA808 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
+		A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
 		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
@@ -164,9 +156,14 @@
 				C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */,
 				D47884A91F7A688B009E2720 /* AppDelegate.swift */,
 				D47884AB1F7A688B009E2720 /* ViewController.swift */,
+				A03391B41F823F240036DE2B /* BorderView.swift */,
 				D47884AD1F7A688B009E2720 /* Main.storyboard */,
 				D40B93261F82224B00FDD362 /* home.storyboard */,
 				D40B93241F82213F00FDD362 /* battle.storyboard */,
+				A084B1EC1F8CE97F00AAA808 /* View.xib */,
+				A038DFC81F8245CD00A146DB /* battle.swift */,
+				A038DFCA1F825F4100A146DB /* BattleViewController.swift */,
+				A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */,
 				D40B931E1F821C4900FDD362 /* ranking.storyboard */,
 				D40B93221F82206100FDD362 /* others.storyboard */,
 				D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */,
@@ -315,6 +312,7 @@
 				D40B93231F82206100FDD362 /* others.storyboard in Resources */,
 				D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */,
 				D40B93251F82213F00FDD362 /* battle.storyboard in Resources */,
+				A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */,
 				D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */,
 				D47884B11F7A688B009E2720 /* Assets.xcassets in Resources */,
 				D47884AF1F7A688B009E2720 /* Main.storyboard in Resources */,
@@ -493,13 +491,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
+				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
+				A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
 				C49D42C01F82524F00051D5A /* MissionViewController.swift in Sources */,
 				C49D42C41F82533600051D5A /* MainMissionViewController.swift in Sources */,
 				C49D42BE1F8251DB00051D5A /* DailyMissionViewController.swift in Sources */,
 				C49D42C21F82531900051D5A /* WeeklyMissionViewController.swift in Sources */,
 				D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */,
+				A038DFC91F8245CD00A146DB /* battle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -657,7 +659,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ezk_marathon_training/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ezk-marathon.ezk-marathon-training";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -673,7 +675,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ezk_marathon_training/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ezk-marathon.ezk-marathon-training";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -716,7 +718,9 @@
 			baseConfigurationReference = F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ezk_marathon_trainingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ezk-marathon.ezk-marathon-trainingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -730,7 +734,9 @@
 			baseConfigurationReference = 9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ezk_marathon_trainingUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.ezk-marathon.ezk-marathon-trainingUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
