@@ -115,8 +115,11 @@ class BattleViewController: UIViewController {
                 (action: UIAlertAction!) -> Void in
                 print("再挑戦")
                 self.guageInit()
+                //item画面も閉じる
+                self.itemPopUpView?.removeFromSuperview()
             })
             alert.addAction(defaultAction)
+
         } else if judge == "win"{
             alert = UIAlertController(title: "勝利", message: "", preferredStyle:  UIAlertControllerStyle.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "次へ", style: UIAlertActionStyle.default, handler:{
@@ -124,8 +127,12 @@ class BattleViewController: UIViewController {
                 (action: UIAlertAction!) -> Void in
                 print("次へ")
                 self.guageInit()
+                //item画面も閉じる
+                self.itemPopUpView?.removeFromSuperview()
+
             })
             alert.addAction(defaultAction)
+            
         }else{
             alert = UIAlertController(title: "一時停止", message: "", preferredStyle:  UIAlertControllerStyle.alert)
             let defaultAction: UIAlertAction = UIAlertAction(title: "再開", style: UIAlertActionStyle.default, handler:{
@@ -134,16 +141,16 @@ class BattleViewController: UIViewController {
                 print("再開")
                 self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
                 self.hp_timer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
-
             })
             alert.addAction(defaultAction)
-            
         }
+        
         // 終了ボタン
         let cancelAction: UIAlertAction = UIAlertAction(title: "終了", style: UIAlertActionStyle.cancel, handler:{
             // ボタンが押された時の処理（クロージャ実装）
             (action: UIAlertAction!) -> Void in
             print("終了")
+            
         })
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)
