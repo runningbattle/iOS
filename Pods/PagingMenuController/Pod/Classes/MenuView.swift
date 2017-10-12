@@ -9,10 +9,10 @@
 import UIKit
 
 open class MenuView: UIScrollView {
-    open fileprivate(set) var currentMenuItemView: MenuItemView!
+    public fileprivate(set) var currentMenuItemView: MenuItemView!
     
-    weak internal var viewDelegate: PagingMenuControllerDelegate?
     internal fileprivate(set) var menuItemViews = [MenuItemView]()
+    internal var onMove: ((MenuMoveState) -> Void)?
     
     fileprivate var menuOptions: MenuViewCustomizable!
     fileprivate var sortedMenuItemViews = [MenuItemView]()
@@ -56,7 +56,13 @@ open class MenuView: UIScrollView {
         }
     }
     fileprivate var centerOfScreenWidth: CGFloat {
-        return menuItemViews[currentPage].frame.midX - UIApplication.shared.keyWindow!.bounds.width / 2
+        let screenWidth: CGFloat
+        if let width = UIApplication.shared.keyWindow?.bounds.width {
+            screenWidth = width
+        } else {
+            screenWidth = UIScreen.main.bounds.width
+        }
+        return menuItemViews[currentPage].frame.midX - screenWidth / 2
     }
     fileprivate var contentOffsetXForCurrentPage: CGFloat {
         guard menuItemCount > MinimumSupportedViewCount else { return 0.0 }
@@ -109,7 +115,7 @@ open class MenuView: UIScrollView {
         
         if let previousMenuItemView = previousMenuItemView,
             page != previousPage {
-            viewDelegate?.willMove(toMenuItem: menuItemView, fromMenuItem: previousMenuItemView)
+            onMove?(.willMoveItem(to: menuItemView, from: previousMenuItemView))
         }
         
         update(currentPage: page)
@@ -140,7 +146,7 @@ open class MenuView: UIScrollView {
             
             if let previousMenuItemView = previousMenuItemView,
                 page != previousPage {
-                self!.viewDelegate?.didMove(toMenuItem: self!.currentMenuItemView, fromMenuItem: previousMenuItemView)
+                self!.onMove?(.didMoveItem(to: self!.currentMenuItemView, from: previousMenuItemView))
             }
         }
     }
@@ -164,6 +170,7 @@ open class MenuView: UIScrollView {
         showsVerticalScrollIndicator = false
         bounces = menuViewBounces
         isScrollEnabled = menuViewScrollEnabled
+        isDirectionalLockEnabled = true
         decelerationRate = menuOptions.deceleratingRate
         scrollsToTop = false
         translatesAutoresizingMaskIntoConstraints = false
@@ -307,8 +314,8 @@ open class MenuView: UIScrollView {
         default: return
         }
         
-        let firstMenuView = menuItemViews.first!
-        let lastMenuView = menuItemViews.last!
+        guard let firstMenuView = menuItemViews.first,
+            let lastMenuView = menuItemViews.last else { return }
         
         var inset = contentInset
         let halfWidth = frame.width / 2
@@ -351,7 +358,7 @@ extension MenuView: Pagable {
     }
 }
 
-extension MenuView: ViewCleanable {
+extension MenuView {
     func cleanup() {
         contentView.removeFromSuperview()
         switch menuOptions.focusMode {
@@ -369,14 +376,14 @@ extension MenuView: ViewCleanable {
     }
 }
 
-extension MenuView: MenuItemMultipliable {
+extension MenuView {
     var menuItemCount: Int {
         switch menuOptions.displayMode {
         case .infinite: return menuOptions.itemsOptions.count * menuOptions.dummyItemViewsSet
         default: return menuOptions.itemsOptions.count
         }
     }
-    func rawPage(_ page: Int) -> Int {
+    fileprivate func rawPage(_ page: Int) -> Int {
         let startIndex = currentPage - menuItemCount / 2
         return (startIndex + page + menuItemCount) % menuItemCount
     }

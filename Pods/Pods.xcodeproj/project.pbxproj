@@ -7,33 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		16AE2F07AC06F8DD2D051E4B462D8BF2 /* ViewCleanable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 498CC7AB204CF84D95C94A83A40E22E3 /* ViewCleanable.swift */; };
-		1E4AF4CD9A9900EA86386BA41C2598F0 /* MenuItemViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FA165F4502B1AC36410C16926FE9759 /* MenuItemViewCustomizable.swift */; };
 		237DC467AAD8E902910C27F69ECB5F42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		3B3E740182FDF6F840BA55957A1DE5B7 /* PageLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BED7E2493ECB07BDEE35976A311EE020 /* PageLoadable.swift */; };
-		4F7EE294E6907C38C05A01ED3A5AEA85 /* GestureHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A10E6C935A822D773601422F3AED0414 /* GestureHandler.swift */; };
-		5FBB19CED094BA6C1A5F82C7B7497CEF /* PageDetectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52CB6BE1F50E93EE7184AFD13FBE719 /* PageDetectable.swift */; };
-		63F853F41B0E8102CA7E12BD16D6F578 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D6BD6E545F94E03D1C29F807AD5550 /* MenuItemView.swift */; };
+		2BB214A9CFE44C92CC55CDE0FC6826BC /* MenuItemViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41E3CDF73EDDD993A2923F66E9931C4B /* MenuItemViewCustomizable.swift */; };
+		3DBFA5146ABB5655231E2EDC8EA94917 /* PagingMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D6E72BB4C3561D0B435872ECE80160 /* PagingMenuController-dummy.m */; };
+		58917BC8E1610B47CE951F3D0F8EAC9E /* PagingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72C3FBF2A90FC95283E2A1C1B163492B /* PagingMenuController.swift */; };
+		6149CEA68EFAC40C8A3AEA09621C99AA /* PagingMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A8F9F7842FABE8C9D6C4DA619BB21A87 /* PagingMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6E0C8618060D7DEFA8BDC150803A4904 /* Pods-ezk_marathon_training-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FCB10EB9CD62E8B1ADA5D4AA8E0E1B3F /* Pods-ezk_marathon_training-dummy.m */; };
-		721F179B9825503B132B5F49F623B7CC /* PagingMenuControllerCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E519DE7E18FF98773D75403C28E8425 /* PagingMenuControllerCustomizable.swift */; };
-		80043509834287CBE6F76BA7BB8C801D /* LabelSizeCalculatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2073B47A66187D2B5D53EBE160976 /* LabelSizeCalculatable.swift */; };
-		843B6AAB2009DD52858285D4EED9753E /* MenuItemMultipliable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B300B643632857B4050DBDA68E3F53CF /* MenuItemMultipliable.swift */; };
-		84E78A0300DBD5EF3DEAC8906D1F03D2 /* PagingMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4158F4454BFC14ACED05F67FDC1101A1 /* PagingMenuController.swift */; };
+		6E5D6BEA1F90F2C2ABE3F31AF0950D44 /* MenuItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F3C886032C1C3DF810E3299A8507BE /* MenuItemView.swift */; };
+		846E5CA01F3D6EBCE45085A1D0B0C982 /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D59F5409963955A941F9CA9F7CB16751 /* PagingViewController.swift */; };
+		957660A973E90928832154EBFD34ABD8 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435C2155B552EAEF595FD41754C1D469 /* MenuView.swift */; };
 		9923EF232AEB50CBB1DCC37B6AA90389 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9D07AC1F1B8B9173A44D51F754DA160D /* Pods-ezk_marathon_trainingUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7C8CB7FED997CF1FA058A2BBFEBC9B /* Pods-ezk_marathon_trainingUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9FED054AEE881ED95B9247344DC54E5F /* Pods-ezk_marathon_trainingTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 0C03BF4C3CFD1F3EF38C4353BE41F885 /* Pods-ezk_marathon_trainingTests-dummy.m */; };
 		A220EF1AA78DCF3CE4680EEFF6442A02 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		A825C73A6CC51F596B9D95689572EBE7 /* MenuViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2498908062CB19AD146E4C9D6E0C17C5 /* MenuViewCustomizable.swift */; };
-		AA57CDA5A7ED2BA2616065479796FFB5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		AF8A0B57EECB3A5784BBE1E6F046C469 /* Pods-ezk_marathon_trainingUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C46278ACFD10BC13D9E863320AA214D2 /* Pods-ezk_marathon_trainingUITests-dummy.m */; };
-		C4D2297B708340B0D3553C48CDFC4B0F /* Pagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C477E93E0600C5BD64997480DD34568 /* Pagable.swift */; };
-		DB4BAD105F5EB18B88415006006C80F2 /* PagingMenuController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6DCAC436B5FECFD3D8BD4CB2929CCE65 /* PagingMenuController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E1E842C686BBD731725B80A9114A991B /* PagingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD4B44E78E9D07B9A04754CEA744C1F /* PagingViewController.swift */; };
+		AFD54A8EC84E109CD73007EFE54247DD /* PagingMenuControllerCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC6F7CFBA13436012132DAC199D11E3D /* PagingMenuControllerCustomizable.swift */; };
+		BDF893F95D3ADCD76B46BB4C72C647B8 /* MenuViewCustomizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 346A627446342408C826AA070E21E906 /* MenuViewCustomizable.swift */; };
+		DF3E0792A96A07FC0911D74A256BA784 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		E5107BEF2B3AD2AA5FE59E2C73123891 /* Pods-ezk_marathon_trainingTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B2D9A3FE7D7E0B7DFF8AC21F2C3499B /* Pods-ezk_marathon_trainingTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E880ADC534A4FE2D93C0E582EFFE867D /* Pods-ezk_marathon_training-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 123E1CC9FFBF9AB7991A47746A43BAA7 /* Pods-ezk_marathon_training-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F160267B536ACF81F0F10FD0E72BBA32 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1547B293E3CF1ACB3DC5F8E2870D961 /* MenuView.swift */; };
-		F8A678B28EEC0E99085F3A881DF446C0 /* PagingMenuController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D9573C5EB06C13C422B4A4C3DAF10FF3 /* PagingMenuController-dummy.m */; };
-		FCEF365A0C733D313F655D61CD7A1623 /* PagingValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FDA9054AD556BE18DF185722D42671C /* PagingValidator.swift */; };
+		EA98CA3B22E2FE57EE465FEF4894B8B0 /* Pagable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A8FC7AAFC842A68527649A170751368 /* Pagable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +34,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1B85874CCDEEC5903571AB787E8CEF0A;
+			remoteGlobalIDString = 6ADB3656BDFD85FB77E0CAB44BFF61E6;
 			remoteInfo = PagingMenuController;
 		};
 /* End PBXContainerItemProxy section */
@@ -49,64 +42,65 @@
 /* Begin PBXFileReference section */
 		0876FD1104E7632383464FFFA3261B0A /* Pods-ezk_marathon_trainingUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ezk_marathon_trainingUITests-acknowledgements.plist"; sourceTree = "<group>"; };
 		0C03BF4C3CFD1F3EF38C4353BE41F885 /* Pods-ezk_marathon_trainingTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ezk_marathon_trainingTests-dummy.m"; sourceTree = "<group>"; };
-		0E519DE7E18FF98773D75403C28E8425 /* PagingMenuControllerCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuControllerCustomizable.swift; path = Pod/Classes/Protocols/PagingMenuControllerCustomizable.swift; sourceTree = "<group>"; };
 		123E1CC9FFBF9AB7991A47746A43BAA7 /* Pods-ezk_marathon_training-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ezk_marathon_training-umbrella.h"; sourceTree = "<group>"; };
 		19A73CFAC213FD9B0E7F3E67096A699C /* Pods_ezk_marathon_trainingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ezk_marathon_trainingUITests.framework; path = "Pods-ezk_marathon_trainingUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FDA9054AD556BE18DF185722D42671C /* PagingValidator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingValidator.swift; path = Pod/Classes/Protocols/PagingValidator.swift; sourceTree = "<group>"; };
-		2498908062CB19AD146E4C9D6E0C17C5 /* MenuViewCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuViewCustomizable.swift; path = Pod/Classes/Protocols/MenuViewCustomizable.swift; sourceTree = "<group>"; };
-		3810AC9AEA7121A645531F681555DAF8 /* PagingMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-prefix.pch"; sourceTree = "<group>"; };
-		3EE9B09C91FB230DA75B04CD52B162A4 /* PagingMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PagingMenuController.modulemap; sourceTree = "<group>"; };
-		4158F4454BFC14ACED05F67FDC1101A1 /* PagingMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuController.swift; path = Pod/Classes/PagingMenuController.swift; sourceTree = "<group>"; };
+		1BF6ACBFEABC76E7776D41CD557832E8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		346A627446342408C826AA070E21E906 /* MenuViewCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuViewCustomizable.swift; path = Pod/Classes/Protocols/MenuViewCustomizable.swift; sourceTree = "<group>"; };
+		41E3CDF73EDDD993A2923F66E9931C4B /* MenuItemViewCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemViewCustomizable.swift; path = Pod/Classes/Protocols/MenuItemViewCustomizable.swift; sourceTree = "<group>"; };
+		435C2155B552EAEF595FD41754C1D469 /* MenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = Pod/Classes/MenuView.swift; sourceTree = "<group>"; };
 		438F36D323543FE81507EA02C8A5CF26 /* Pods-ezk_marathon_trainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ezk_marathon_trainingTests.release.xcconfig"; sourceTree = "<group>"; };
 		478CD25E6B4D22655D145A451D2C6686 /* Pods-ezk_marathon_trainingUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ezk_marathon_trainingUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		47E28D7EB25D4FB594C55F62F85CAD02 /* PagingMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingMenuController.xcconfig; sourceTree = "<group>"; };
 		489A68B98D56594D545F0ABE8978BE12 /* Pods-ezk_marathon_trainingTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ezk_marathon_trainingTests-resources.sh"; sourceTree = "<group>"; };
-		498CC7AB204CF84D95C94A83A40E22E3 /* ViewCleanable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewCleanable.swift; path = Pod/Classes/Protocols/ViewCleanable.swift; sourceTree = "<group>"; };
-		51F8580AB5D9DD020516E0FDA2A5D51E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58E75F3C3EBB817961FBB73DBCDCEC47 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ezk_marathon_trainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		5B19E77D46D258C50C98F6AD622EF840 /* PagingMenuController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = PagingMenuController.xcconfig; sourceTree = "<group>"; };
-		5C477E93E0600C5BD64997480DD34568 /* Pagable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pagable.swift; path = Pod/Classes/Protocols/Pagable.swift; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		68C2304BCF79F642A5F5E0D6D6DCCC6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6DCAC436B5FECFD3D8BD4CB2929CCE65 /* PagingMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-umbrella.h"; sourceTree = "<group>"; };
+		72C3FBF2A90FC95283E2A1C1B163492B /* PagingMenuController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuController.swift; path = Pod/Classes/PagingMenuController.swift; sourceTree = "<group>"; };
 		7D65C9B110E91336504E6BBDAA78AA08 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7FDC0A821853E395C63D01F05CE5E56D /* Pods-ezk_marathon_training-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ezk_marathon_training-resources.sh"; sourceTree = "<group>"; };
 		835488B941A8BBEA07A426D6BF680B23 /* Pods-ezk_marathon_trainingTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ezk_marathon_trainingTests.modulemap"; sourceTree = "<group>"; };
 		87B03978480ACB37D6FD1FAA0F87FC35 /* Pods-ezk_marathon_trainingTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ezk_marathon_trainingTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		87FAB74C4A1A9660F96B37DC01CE379F /* Pods-ezk_marathon_training-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ezk_marathon_training-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8A8FC7AAFC842A68527649A170751368 /* Pagable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Pagable.swift; path = Pod/Classes/Protocols/Pagable.swift; sourceTree = "<group>"; };
 		8AB0019A1159C25BDA1484A7A93864FD /* PagingMenuController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PagingMenuController.framework; path = PagingMenuController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B598EB143938C06613227BD56C685E8 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ezk_marathon_trainingTests.debug.xcconfig"; sourceTree = "<group>"; };
-		8FA165F4502B1AC36410C16926FE9759 /* MenuItemViewCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemViewCustomizable.swift; path = Pod/Classes/Protocols/MenuItemViewCustomizable.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9421466ABAFD03AD527266436C4019FC /* Pods-ezk_marathon_trainingUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ezk_marathon_trainingUITests-frameworks.sh"; sourceTree = "<group>"; };
+		94D6E72BB4C3561D0B435872ECE80160 /* PagingMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingMenuController-dummy.m"; sourceTree = "<group>"; };
 		9B2D9A3FE7D7E0B7DFF8AC21F2C3499B /* Pods-ezk_marathon_trainingTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ezk_marathon_trainingTests-umbrella.h"; sourceTree = "<group>"; };
-		A10E6C935A822D773601422F3AED0414 /* GestureHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GestureHandler.swift; path = Pod/Classes/Protocols/GestureHandler.swift; sourceTree = "<group>"; };
 		A3D2FDE22300CDF7EF41C4D8CA7D57AB /* Pods-ezk_marathon_trainingUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ezk_marathon_trainingUITests.modulemap"; sourceTree = "<group>"; };
-		A52CB6BE1F50E93EE7184AFD13FBE719 /* PageDetectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageDetectable.swift; path = Pod/Classes/Protocols/PageDetectable.swift; sourceTree = "<group>"; };
+		A5F3C886032C1C3DF810E3299A8507BE /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Pod/Classes/MenuItemView.swift; sourceTree = "<group>"; };
 		A73F8C6E1F9A28D98399A150AEAE01F0 /* Pods-ezk_marathon_trainingUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ezk_marathon_trainingUITests-resources.sh"; sourceTree = "<group>"; };
 		A807844011CB05D4A66144ADC6A91283 /* Pods_ezk_marathon_training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ezk_marathon_training.framework; path = "Pods-ezk_marathon_training.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8F9F7842FABE8C9D6C4DA619BB21A87 /* PagingMenuController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-umbrella.h"; sourceTree = "<group>"; };
 		AC0D89B314290831EFC8B42A5AA66010 /* Pods-ezk_marathon_training-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ezk_marathon_training-acknowledgements.plist"; sourceTree = "<group>"; };
 		AD55011006941EE7CCF239DABFA69FB3 /* Pods-ezk_marathon_training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ezk_marathon_training.debug.xcconfig"; sourceTree = "<group>"; };
 		AE75885559074DE4B8AD7704DC5CDE4F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B300B643632857B4050DBDA68E3F53CF /* MenuItemMultipliable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemMultipliable.swift; path = Pod/Classes/Protocols/MenuItemMultipliable.swift; sourceTree = "<group>"; };
-		B6D6BD6E545F94E03D1C29F807AD5550 /* MenuItemView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuItemView.swift; path = Pod/Classes/MenuItemView.swift; sourceTree = "<group>"; };
-		BED7E2493ECB07BDEE35976A311EE020 /* PageLoadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PageLoadable.swift; path = Pod/Classes/Protocols/PageLoadable.swift; sourceTree = "<group>"; };
 		BED88BC76E326FB2C63017DE9A379F5A /* Pods-ezk_marathon_trainingTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ezk_marathon_trainingTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		BFEB6D65956E3167BF84BA95D895E10B /* Pods-ezk_marathon_training-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ezk_marathon_training-frameworks.sh"; sourceTree = "<group>"; };
 		C46278ACFD10BC13D9E863320AA214D2 /* Pods-ezk_marathon_trainingUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ezk_marathon_trainingUITests-dummy.m"; sourceTree = "<group>"; };
 		C66C904384F32AC66F033AB4259FCEF0 /* Pods-ezk_marathon_trainingTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ezk_marathon_trainingTests-frameworks.sh"; sourceTree = "<group>"; };
+		C992D787C821470A34C88A91266C3CE1 /* PagingMenuController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = PagingMenuController.modulemap; sourceTree = "<group>"; };
 		CB4E8F973A375F40F769DCB637E89EB7 /* Pods-ezk_marathon_training.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ezk_marathon_training.modulemap"; sourceTree = "<group>"; };
-		D9573C5EB06C13C422B4A4C3DAF10FF3 /* PagingMenuController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PagingMenuController-dummy.m"; sourceTree = "<group>"; };
-		DBD4B44E78E9D07B9A04754CEA744C1F /* PagingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingViewController.swift; path = Pod/Classes/PagingViewController.swift; sourceTree = "<group>"; };
+		D59F5409963955A941F9CA9F7CB16751 /* PagingViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingViewController.swift; path = Pod/Classes/PagingViewController.swift; sourceTree = "<group>"; };
+		DC6F7CFBA13436012132DAC199D11E3D /* PagingMenuControllerCustomizable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PagingMenuControllerCustomizable.swift; path = Pod/Classes/Protocols/PagingMenuControllerCustomizable.swift; sourceTree = "<group>"; };
 		E156A5DBE6E5B71CBDAD8C0E3695C3A8 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ezk_marathon_trainingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E8B43EC9E05B2AF31F7814EDC037DEE4 /* Pods-ezk_marathon_training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ezk_marathon_training.release.xcconfig"; sourceTree = "<group>"; };
 		EEFD0F795518D1CA25EAB77D94FA520C /* Pods_ezk_marathon_trainingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ezk_marathon_trainingTests.framework; path = "Pods-ezk_marathon_trainingTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1547B293E3CF1ACB3DC5F8E2870D961 /* MenuView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MenuView.swift; path = Pod/Classes/MenuView.swift; sourceTree = "<group>"; };
-		FBC2073B47A66187D2B5D53EBE160976 /* LabelSizeCalculatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LabelSizeCalculatable.swift; path = Pod/Classes/Protocols/LabelSizeCalculatable.swift; sourceTree = "<group>"; };
+		F32CD915F54CED6BBA920198B7EFD144 /* PagingMenuController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PagingMenuController-prefix.pch"; sourceTree = "<group>"; };
 		FCB10EB9CD62E8B1ADA5D4AA8E0E1B3F /* Pods-ezk_marathon_training-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ezk_marathon_training-dummy.m"; sourceTree = "<group>"; };
 		FE7C8CB7FED997CF1FA058A2BBFEBC9B /* Pods-ezk_marathon_trainingUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ezk_marathon_trainingUITests-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		03E7C3DF47D01DDC32E252295081A592 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF3E0792A96A07FC0911D74A256BA784 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		0CB2173F5CD01A1760C034CF9633B02F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -131,14 +125,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E81C67559311B3A47438337BF620D130 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				AA57CDA5A7ED2BA2616065479796FFB5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -150,30 +136,6 @@
 				FEFD1045E7ADF6EA9C4C993D77E84234 /* Pods-ezk_marathon_trainingUITests */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		5C02820365EE71FA7052A03DF708A99B /* PagingMenuController */ = {
-			isa = PBXGroup;
-			children = (
-				A10E6C935A822D773601422F3AED0414 /* GestureHandler.swift */,
-				FBC2073B47A66187D2B5D53EBE160976 /* LabelSizeCalculatable.swift */,
-				B300B643632857B4050DBDA68E3F53CF /* MenuItemMultipliable.swift */,
-				B6D6BD6E545F94E03D1C29F807AD5550 /* MenuItemView.swift */,
-				8FA165F4502B1AC36410C16926FE9759 /* MenuItemViewCustomizable.swift */,
-				F1547B293E3CF1ACB3DC5F8E2870D961 /* MenuView.swift */,
-				2498908062CB19AD146E4C9D6E0C17C5 /* MenuViewCustomizable.swift */,
-				5C477E93E0600C5BD64997480DD34568 /* Pagable.swift */,
-				A52CB6BE1F50E93EE7184AFD13FBE719 /* PageDetectable.swift */,
-				BED7E2493ECB07BDEE35976A311EE020 /* PageLoadable.swift */,
-				4158F4454BFC14ACED05F67FDC1101A1 /* PagingMenuController.swift */,
-				0E519DE7E18FF98773D75403C28E8425 /* PagingMenuControllerCustomizable.swift */,
-				1FDA9054AD556BE18DF185722D42671C /* PagingValidator.swift */,
-				DBD4B44E78E9D07B9A04754CEA744C1F /* PagingViewController.swift */,
-				498CC7AB204CF84D95C94A83A40E22E3 /* ViewCleanable.swift */,
-				70F31172C3B9AB78ADC0D3426F90D33F /* Support Files */,
-			);
-			name = PagingMenuController;
-			path = PagingMenuController;
 			sourceTree = "<group>";
 		};
 		5D369B1A91574A1250F882D3925161E0 /* Pods-ezk_marathon_training */ = {
@@ -194,26 +156,12 @@
 			path = "Target Support Files/Pods-ezk_marathon_training";
 			sourceTree = "<group>";
 		};
-		70F31172C3B9AB78ADC0D3426F90D33F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				51F8580AB5D9DD020516E0FDA2A5D51E /* Info.plist */,
-				3EE9B09C91FB230DA75B04CD52B162A4 /* PagingMenuController.modulemap */,
-				5B19E77D46D258C50C98F6AD622EF840 /* PagingMenuController.xcconfig */,
-				D9573C5EB06C13C422B4A4C3DAF10FF3 /* PagingMenuController-dummy.m */,
-				3810AC9AEA7121A645531F681555DAF8 /* PagingMenuController-prefix.pch */,
-				6DCAC436B5FECFD3D8BD4CB2929CCE65 /* PagingMenuController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/PagingMenuController";
-			sourceTree = "<group>";
-		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				A274BA861FA012B2EE6E067FC9ED233A /* Pods */,
+				AF0D07A1A79D0B6C60392DDB1D3D7146 /* Pods */,
 				A24CFE581FA17092A55CF2831055543C /* Products */,
 				1182050219BD6E1AC047076D836EEC9C /* Targets Support Files */,
 			);
@@ -230,10 +178,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A274BA861FA012B2EE6E067FC9ED233A /* Pods */ = {
+		A3B3FE888C7856F03B4A02AADB61CFA8 /* PagingMenuController */ = {
 			isa = PBXGroup;
 			children = (
-				5C02820365EE71FA7052A03DF708A99B /* PagingMenuController */,
+				A5F3C886032C1C3DF810E3299A8507BE /* MenuItemView.swift */,
+				41E3CDF73EDDD993A2923F66E9931C4B /* MenuItemViewCustomizable.swift */,
+				435C2155B552EAEF595FD41754C1D469 /* MenuView.swift */,
+				346A627446342408C826AA070E21E906 /* MenuViewCustomizable.swift */,
+				8A8FC7AAFC842A68527649A170751368 /* Pagable.swift */,
+				72C3FBF2A90FC95283E2A1C1B163492B /* PagingMenuController.swift */,
+				DC6F7CFBA13436012132DAC199D11E3D /* PagingMenuControllerCustomizable.swift */,
+				D59F5409963955A941F9CA9F7CB16751 /* PagingViewController.swift */,
+				AE1E98E7F4AD8E211674DE23EC367D59 /* Support Files */,
+			);
+			name = PagingMenuController;
+			path = PagingMenuController;
+			sourceTree = "<group>";
+		};
+		AE1E98E7F4AD8E211674DE23EC367D59 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1BF6ACBFEABC76E7776D41CD557832E8 /* Info.plist */,
+				C992D787C821470A34C88A91266C3CE1 /* PagingMenuController.modulemap */,
+				47E28D7EB25D4FB594C55F62F85CAD02 /* PagingMenuController.xcconfig */,
+				94D6E72BB4C3561D0B435872ECE80160 /* PagingMenuController-dummy.m */,
+				F32CD915F54CED6BBA920198B7EFD144 /* PagingMenuController-prefix.pch */,
+				A8F9F7842FABE8C9D6C4DA619BB21A87 /* PagingMenuController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/PagingMenuController";
+			sourceTree = "<group>";
+		};
+		AF0D07A1A79D0B6C60392DDB1D3D7146 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A3B3FE888C7856F03B4A02AADB61CFA8 /* PagingMenuController */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -301,11 +280,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9834E3E15861A950CF77A7D916586580 /* Headers */ = {
+		B5C302DBC5B51659D06BBA33D41FB129 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB4BAD105F5EB18B88415006006C80F2 /* PagingMenuController-umbrella.h in Headers */,
+				6149CEA68EFAC40C8A3AEA09621C99AA /* PagingMenuController-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,23 +307,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1B85874CCDEEC5903571AB787E8CEF0A /* PagingMenuController */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = AD442167B778A3F8C15480FE635D4022 /* Build configuration list for PBXNativeTarget "PagingMenuController" */;
-			buildPhases = (
-				839C9B8FBBCF8F7A7A0DBFBF9BC16765 /* Sources */,
-				E81C67559311B3A47438337BF620D130 /* Frameworks */,
-				9834E3E15861A950CF77A7D916586580 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = PagingMenuController;
-			productName = PagingMenuController;
-			productReference = 8AB0019A1159C25BDA1484A7A93864FD /* PagingMenuController.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		48EA6094E34194C50D4483EFD4D18EE8 /* Pods-ezk_marathon_trainingTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 03CA91FA5105FA765C0F8500A0499415 /* Build configuration list for PBXNativeTarget "Pods-ezk_marathon_trainingTests" */;
@@ -360,6 +322,23 @@
 			name = "Pods-ezk_marathon_trainingTests";
 			productName = "Pods-ezk_marathon_trainingTests";
 			productReference = EEFD0F795518D1CA25EAB77D94FA520C /* Pods_ezk_marathon_trainingTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6ADB3656BDFD85FB77E0CAB44BFF61E6 /* PagingMenuController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 974BAC4FE33349DBFEA2FDAE7D508C0A /* Build configuration list for PBXNativeTarget "PagingMenuController" */;
+			buildPhases = (
+				934C8100011617FC9736BF48C821CFDD /* Sources */,
+				03E7C3DF47D01DDC32E252295081A592 /* Frameworks */,
+				B5C302DBC5B51659D06BBA33D41FB129 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PagingMenuController;
+			productName = PagingMenuController;
+			productReference = 8AB0019A1159C25BDA1484A7A93864FD /* PagingMenuController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		A0F678A64A453FD5BF85FD545A8E7D48 /* Pods-ezk_marathon_trainingUITests */ = {
@@ -418,7 +397,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1B85874CCDEEC5903571AB787E8CEF0A /* PagingMenuController */,
+				6ADB3656BDFD85FB77E0CAB44BFF61E6 /* PagingMenuController */,
 				B36D431472876D7C735568B66BADFA93 /* Pods-ezk_marathon_training */,
 				48EA6094E34194C50D4483EFD4D18EE8 /* Pods-ezk_marathon_trainingTests */,
 				A0F678A64A453FD5BF85FD545A8E7D48 /* Pods-ezk_marathon_trainingUITests */,
@@ -443,26 +422,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		839C9B8FBBCF8F7A7A0DBFBF9BC16765 /* Sources */ = {
+		934C8100011617FC9736BF48C821CFDD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F7EE294E6907C38C05A01ED3A5AEA85 /* GestureHandler.swift in Sources */,
-				80043509834287CBE6F76BA7BB8C801D /* LabelSizeCalculatable.swift in Sources */,
-				843B6AAB2009DD52858285D4EED9753E /* MenuItemMultipliable.swift in Sources */,
-				63F853F41B0E8102CA7E12BD16D6F578 /* MenuItemView.swift in Sources */,
-				1E4AF4CD9A9900EA86386BA41C2598F0 /* MenuItemViewCustomizable.swift in Sources */,
-				F160267B536ACF81F0F10FD0E72BBA32 /* MenuView.swift in Sources */,
-				A825C73A6CC51F596B9D95689572EBE7 /* MenuViewCustomizable.swift in Sources */,
-				C4D2297B708340B0D3553C48CDFC4B0F /* Pagable.swift in Sources */,
-				5FBB19CED094BA6C1A5F82C7B7497CEF /* PageDetectable.swift in Sources */,
-				3B3E740182FDF6F840BA55957A1DE5B7 /* PageLoadable.swift in Sources */,
-				F8A678B28EEC0E99085F3A881DF446C0 /* PagingMenuController-dummy.m in Sources */,
-				84E78A0300DBD5EF3DEAC8906D1F03D2 /* PagingMenuController.swift in Sources */,
-				721F179B9825503B132B5F49F623B7CC /* PagingMenuControllerCustomizable.swift in Sources */,
-				FCEF365A0C733D313F655D61CD7A1623 /* PagingValidator.swift in Sources */,
-				E1E842C686BBD731725B80A9114A991B /* PagingViewController.swift in Sources */,
-				16AE2F07AC06F8DD2D051E4B462D8BF2 /* ViewCleanable.swift in Sources */,
+				6E5D6BEA1F90F2C2ABE3F31AF0950D44 /* MenuItemView.swift in Sources */,
+				2BB214A9CFE44C92CC55CDE0FC6826BC /* MenuItemViewCustomizable.swift in Sources */,
+				957660A973E90928832154EBFD34ABD8 /* MenuView.swift in Sources */,
+				BDF893F95D3ADCD76B46BB4C72C647B8 /* MenuViewCustomizable.swift in Sources */,
+				EA98CA3B22E2FE57EE465FEF4894B8B0 /* Pagable.swift in Sources */,
+				3DBFA5146ABB5655231E2EDC8EA94917 /* PagingMenuController-dummy.m in Sources */,
+				58917BC8E1610B47CE951F3D0F8EAC9E /* PagingMenuController.swift in Sources */,
+				AFD54A8EC84E109CD73007EFE54247DD /* PagingMenuControllerCustomizable.swift in Sources */,
+				846E5CA01F3D6EBCE45085A1D0B0C982 /* PagingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,15 +452,15 @@
 		287CA49CC8AD79D39299F6B633D228BB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = PagingMenuController;
-			target = 1B85874CCDEEC5903571AB787E8CEF0A /* PagingMenuController */;
+			target = 6ADB3656BDFD85FB77E0CAB44BFF61E6 /* PagingMenuController */;
 			targetProxy = DEE46507316B0F86485DB93A8CF74416 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		5E952D8967C3C9EF10070D11D034735F /* Release */ = {
+		07C6EFB8CA4C031C85FA6109BDFB7672 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E156A5DBE6E5B71CBDAD8C0E3695C3A8 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */;
+			baseConfigurationReference = AD55011006941EE7CCF239DABFA69FB3 /* Pods-ezk_marathon_training.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -499,27 +471,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingUITests/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_training/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ezk_marathon_trainingUITests;
+				PRODUCT_NAME = Pods_ezk_marathon_training;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		621AB785940626574F07364CB14760E1 /* Release */ = {
+		1574DFBE46C3A95056829BC718547A7A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -565,7 +538,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
@@ -574,9 +547,41 @@
 			};
 			name = Release;
 		};
-		6BABA619F1A03AF86C485AB567AAFCAD /* Debug */ = {
+		15D0397F91C652A986081B8BC7E8349A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B19E77D46D258C50C98F6AD622EF840 /* PagingMenuController.xcconfig */;
+			baseConfigurationReference = 47E28D7EB25D4FB594C55F62F85CAD02 /* PagingMenuController.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PagingMenuController/PagingMenuController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PagingMenuController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PagingMenuController/PagingMenuController.modulemap";
+				PRODUCT_NAME = PagingMenuController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2088D1A25EE3C0EECE059FA2A5EEF58B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E28D7EB25D4FB594C55F62F85CAD02 /* PagingMenuController.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -605,39 +610,7 @@
 			};
 			name = Debug;
 		};
-		7946E9009FCA2785232A4570205B11ED /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8B598EB143938C06613227BD56C685E8 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ezk_marathon_trainingTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		84BDE911C5D5D8E172B4A3C297775697 /* Release */ = {
+		254BE92C5A504C3ABC12EA7902E8D767 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = E8B43EC9E05B2AF31F7814EDC037DEE4 /* Pods-ezk_marathon_training.release.xcconfig */;
 			buildSettings = {
@@ -652,7 +625,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_training/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.modulemap";
@@ -671,9 +644,9 @@
 			};
 			name = Release;
 		};
-		A3BFEDB8556325BF4AE390C4220B1A71 /* Debug */ = {
+		2992888139519AC15167015A65DF935D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AD55011006941EE7CCF239DABFA69FB3 /* Pods-ezk_marathon_training.debug.xcconfig */;
+			baseConfigurationReference = 438F36D323543FE81507EA02C8A5CF26 /* Pods-ezk_marathon_trainingTests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -684,28 +657,60 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_training/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ezk_marathon_training;
+				PRODUCT_NAME = Pods_ezk_marathon_trainingTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		B57C09D404C607DDE283C5C44183B2A1 /* Debug */ = {
+		464E6B6E156B6F8068EA4123CF65B26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E156A5DBE6E5B71CBDAD8C0E3695C3A8 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingUITests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ezk_marathon_trainingUITests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B5A1446720EEC8CE963B9BD750713E4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -754,7 +759,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -765,40 +770,7 @@
 			};
 			name = Debug;
 		};
-		CE0AC73A1B5EFCB16AC1329BE007C291 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 438F36D323543FE81507EA02C8A5CF26 /* Pods-ezk_marathon_trainingTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ezk_marathon_trainingTests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D00B5930685816382174870F94DC7772 /* Debug */ = {
+		BA25ED5075AA8EE579B857DA9DDEEACC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58E75F3C3EBB817961FBB73DBCDCEC47 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */;
 			buildSettings = {
@@ -813,7 +785,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingUITests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.modulemap";
@@ -830,9 +802,9 @@
 			};
 			name = Debug;
 		};
-		E68FF2FCA5761B05C562CB2E3D2BB86A /* Release */ = {
+		CEB2817A93D6DA4AC901FAF57FB207D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5B19E77D46D258C50C98F6AD622EF840 /* PagingMenuController.xcconfig */;
+			baseConfigurationReference = 8B598EB143938C06613227BD56C685E8 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -843,24 +815,24 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PagingMenuController/PagingMenuController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PagingMenuController/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PagingMenuController/PagingMenuController.modulemap";
-				PRODUCT_NAME = PagingMenuController;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ezk_marathon_trainingTests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -868,8 +840,8 @@
 		03CA91FA5105FA765C0F8500A0499415 /* Build configuration list for PBXNativeTarget "Pods-ezk_marathon_trainingTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7946E9009FCA2785232A4570205B11ED /* Debug */,
-				CE0AC73A1B5EFCB16AC1329BE007C291 /* Release */,
+				CEB2817A93D6DA4AC901FAF57FB207D4 /* Debug */,
+				2992888139519AC15167015A65DF935D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -877,8 +849,8 @@
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				B57C09D404C607DDE283C5C44183B2A1 /* Debug */,
-				621AB785940626574F07364CB14760E1 /* Release */,
+				5B5A1446720EEC8CE963B9BD750713E4 /* Debug */,
+				1574DFBE46C3A95056829BC718547A7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -886,8 +858,8 @@
 		2DCFA52D278658477E3152932B5A50FF /* Build configuration list for PBXNativeTarget "Pods-ezk_marathon_trainingUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D00B5930685816382174870F94DC7772 /* Debug */,
-				5E952D8967C3C9EF10070D11D034735F /* Release */,
+				BA25ED5075AA8EE579B857DA9DDEEACC /* Debug */,
+				464E6B6E156B6F8068EA4123CF65B26D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -895,17 +867,17 @@
 		50EDBC7A0BF488BEB1E887A7BE7FC8F8 /* Build configuration list for PBXNativeTarget "Pods-ezk_marathon_training" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A3BFEDB8556325BF4AE390C4220B1A71 /* Debug */,
-				84BDE911C5D5D8E172B4A3C297775697 /* Release */,
+				07C6EFB8CA4C031C85FA6109BDFB7672 /* Debug */,
+				254BE92C5A504C3ABC12EA7902E8D767 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AD442167B778A3F8C15480FE635D4022 /* Build configuration list for PBXNativeTarget "PagingMenuController" */ = {
+		974BAC4FE33349DBFEA2FDAE7D508C0A /* Build configuration list for PBXNativeTarget "PagingMenuController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6BABA619F1A03AF86C485AB567AAFCAD /* Debug */,
-				E68FF2FCA5761B05C562CB2E3D2BB86A /* Release */,
+				2088D1A25EE3C0EECE059FA2A5EEF58B /* Debug */,
+				15D0397F91C652A986081B8BC7E8349A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

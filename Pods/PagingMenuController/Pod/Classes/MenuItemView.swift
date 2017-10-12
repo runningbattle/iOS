@@ -9,21 +9,21 @@
 import UIKit
 
 open class MenuItemView: UIView {
-    lazy open var titleLabel: UILabel = self.initLabel()
-    lazy open var descriptionLabel: UILabel = self.initLabel()
-    lazy open var menuImageView: UIImageView = {
+    lazy public var titleLabel: UILabel = self.initLabel()
+    lazy public var descriptionLabel: UILabel = self.initLabel()
+    lazy public var menuImageView: UIImageView = {
         $0.isUserInteractionEnabled = true
         $0.translatesAutoresizingMaskIntoConstraints = false
         return $0
     }(UIImageView(frame: .zero))
-    open fileprivate(set) var customView: UIView? {
+    public fileprivate(set) var customView: UIView? {
         didSet {
             guard let customView = customView else { return }
             
             addSubview(customView)
         }
     }
-    open internal(set) var isSelected: Bool = false {
+    public internal(set) var isSelected: Bool = false {
         didSet {
             if case .roundRect = menuOptions.focusMode {
                 backgroundColor = UIColor.clear
@@ -51,7 +51,7 @@ open class MenuItemView: UIView {
             }
         }
     }
-    lazy open fileprivate(set) var dividerImageView: UIImageView? = { [unowned self] in
+    lazy public fileprivate(set) var dividerImageView: UIImageView? = { [unowned self] in
         guard let image = self.menuOptions.dividerImage else { return nil }
         let imageView = UIImageView(image: image)
         imageView.translatesAutoresizingMaskIntoConstraints = false
@@ -229,7 +229,11 @@ open class MenuItemView: UIView {
         let width: CGFloat
         switch menuOptions.displayMode {
         case .segmentedControl:
-            width = UIApplication.shared.keyWindow!.bounds.size.width / CGFloat(menuOptions.itemsOptions.count)
+            if let windowWidth = UIApplication.shared.keyWindow?.bounds.size.width {
+                width = windowWidth / CGFloat(menuOptions.itemsOptions.count)
+            } else {
+                width = UIScreen.main.bounds.width / CGFloat(menuOptions.itemsOptions.count)
+            }
         default:
             width = image.size.width + horizontalMargin * 2
         }
@@ -269,7 +273,7 @@ open class MenuItemView: UIView {
     }
 }
 
-extension MenuItemView: ViewCleanable {
+extension MenuItemView {
     func cleanup() {
         switch menuItemOptions.displayMode {
         case .text:
@@ -287,20 +291,22 @@ extension MenuItemView: ViewCleanable {
     }
 }
 
-extension MenuItemView: LabelSizeCalculatable {
-    func labelWidth(_ widthMode: MenuItemWidthMode, estimatedSize: CGSize) -> CGFloat {
+// MARK: Lable Size
+
+extension MenuItemView {
+    fileprivate func labelWidth(_ widthMode: MenuItemWidthMode, estimatedSize: CGSize) -> CGFloat {
         switch widthMode {
         case .flexible: return ceil(estimatedSize.width)
         case .fixed(let width): return width
         }
     }
     
-    func estimatedLabelSize(_ label: UILabel) -> CGSize {
+    fileprivate func estimatedLabelSize(_ label: UILabel) -> CGSize {
         guard let text = label.text else { return .zero }
         return NSString(string: text).boundingRect(with: CGSize(width: CGFloat.greatestFiniteMagnitude, height: CGFloat.greatestFiniteMagnitude), options: .usesLineFragmentOrigin, attributes: [NSFontAttributeName: label.font], context: nil).size
     }
     
-    func calculateLabelSize(_ label: UILabel, maxWidth: CGFloat) -> CGSize {
+    fileprivate func calculateLabelSize(_ label: UILabel, maxWidth: CGFloat) -> CGSize {
         guard let _ = label.text else { return .zero }
         
         let itemWidth: CGFloat

@@ -1,4 +1,5 @@
 // !$*UTF8*$!
+{
 	archiveVersion = 1;
 	classes = {
 	};
@@ -6,16 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B18D2C97B511544C58D23ED /* Pods_ezk_marathon_trainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530E61B65ECA853A7FE18906 /* Pods_ezk_marathon_trainingTests.framework */; };
 		A03391B51F823F240036DE2B /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03391B41F823F240036DE2B /* BorderView.swift */; };
 		A038DFC91F8245CD00A146DB /* battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFC81F8245CD00A146DB /* battle.swift */; };
 		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
 		A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A084B1EC1F8CE97F00AAA808 /* View.xib */; };
 		A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */; };
+		C8049B5384F07C230E73F2DD /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB89948F1F94AF1CF9DB0212 /* Pods_ezk_marathon_trainingUITests.framework */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
 		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
 		D40B93251F82213F00FDD362 /* battle.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93241F82213F00FDD362 /* battle.storyboard */; };
 		D40B93271F82224B00FDD362 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93261F82224B00FDD362 /* home.storyboard */; };
+		D4248D491F8FBE9B001112B6 /* ItemPurchaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */; };
+		D4248D4A1F8FBE9B001112B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D451F8FBE9B001112B6 /* HomeViewController.swift */; };
+		D4248D4B1F8FBE9B001112B6 /* Homedata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D461F8FBE9B001112B6 /* Homedata.swift */; };
+		D4248D4C1F8FBE9B001112B6 /* DailyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */; };
+		D4248D4E1F8FBEBC001112B6 /* ItemPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D4D1F8FBEBC001112B6 /* ItemPurchaseView.swift */; };
 		D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */; };
 		D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884A91F7A688B009E2720 /* AppDelegate.swift */; };
 		D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884AB1F7A688B009E2720 /* ViewController.swift */; };
@@ -24,8 +32,9 @@
 		D47884B41F7A688B009E2720 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47884B21F7A688B009E2720 /* LaunchScreen.storyboard */; };
 		D47884BF1F7A688C009E2720 /* ezk_marathon_trainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884BE1F7A688C009E2720 /* ezk_marathon_trainingTests.swift */; };
 		D47884CA1F7A688C009E2720 /* ezk_marathon_trainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884C91F7A688C009E2720 /* ezk_marathon_trainingUITests.swift */; };
-		EA7FA4521C41B93134E8C901 /* Pods_ezk_marathon_trainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07EBBA14865157B3933A7D43 /* Pods_ezk_marathon_trainingTests.framework */; };
-		EFD0DCC7D46255AD791526AE /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 224C0F99035BA7400A148F9E /* Pods_ezk_marathon_trainingUITests.framework */; };
+		E7148F2B72D9E1AB03912AB8 /* Pods_ezk_marathon_training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A75655F87FB09AAC3A5B48F /* Pods_ezk_marathon_training.framework */; };
+		EA7FA4521C41B93134E8C901 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		EFD0DCC7D46255AD791526AE /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +55,30 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		036289F2EE353CED636D058D /* Pods-ezk_marathon_training.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.debug.xcconfig"; sourceTree = "<group>"; };
+		13312DA1B3E1B4678FF1CFDE /* Pods-ezk_marathon_training.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_training.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training.release.xcconfig"; sourceTree = "<group>"; };
+		17573D530B3B0954C48FC7AF /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		1A75655F87FB09AAC3A5B48F /* Pods_ezk_marathon_training.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_training.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		530E61B65ECA853A7FE18906 /* Pods_ezk_marathon_trainingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		64111CAD50614B13916FA9E1 /* Pods-ezk_marathon_trainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.release.xcconfig"; sourceTree = "<group>"; };
+		9F68537AC86B3614CDD7F60D /* Pods-ezk_marathon_trainingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A03391B41F823F240036DE2B /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
 		A038DFC81F8245CD00A146DB /* battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = battle.swift; sourceTree = "<group>"; };
 		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		A084B1EC1F8CE97F00AAA808 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
+		AB89948F1F94AF1CF9DB0212 /* Pods_ezk_marathon_trainingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
 		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
 		D40B93241F82213F00FDD362 /* battle.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = battle.storyboard; sourceTree = "<group>"; };
 		D40B93261F82224B00FDD362 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
+		D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPurchaseView.xib; sourceTree = "<group>"; };
+		D4248D451F8FBE9B001112B6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		D4248D461F8FBE9B001112B6 /* Homedata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homedata.swift; sourceTree = "<group>"; };
+		D4248D471F8FBE9B001112B6 /* ezk_marathon_training.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ezk_marathon_training.entitlements; sourceTree = "<group>"; };
+		D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMissionViewController.swift; sourceTree = "<group>"; };
+		D4248D4D1F8FBEBC001112B6 /* ItemPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPurchaseView.swift; sourceTree = "<group>"; };
 		D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamescene_home.swift; sourceTree = "<group>"; };
 		D47884A61F7A688B009E2720 /* ezk_marathon_training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezk_marathon_training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47884A91F7A688B009E2720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,7 +93,7 @@
 		D47884C51F7A688C009E2720 /* ezk_marathon_trainingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ezk_marathon_trainingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47884C91F7A688C009E2720 /* ezk_marathon_trainingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ezk_marathon_trainingUITests.swift; sourceTree = "<group>"; };
 		D47884CB1F7A688C009E2720 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E71BBBD61E8DEE024FFF69B3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F719F2B6CEB9EAA83D2C71 /* Pods_ezk_marathon_training.framework in Frameworks */,
+				E7148F2B72D9E1AB03912AB8 /* Pods_ezk_marathon_training.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,7 +109,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7FA4521C41B93134E8C901 /* Pods_ezk_marathon_trainingTests.framework in Frameworks */,
+				EA7FA4521C41B93134E8C901 /* (null) in Frameworks */,
+				7B18D2C97B511544C58D23ED /* Pods_ezk_marathon_trainingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,22 +118,23 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0DCC7D46255AD791526AE /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */,
+				EFD0DCC7D46255AD791526AE /* (null) in Frameworks */,
+				C8049B5384F07C230E73F2DD /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A1FF49E4513B79DBE8B6D5D1 /* Pods */ = {
+		8819B9D46DDF04ECD5E1FE88 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */,
-				695C238AB18095805423FC3C /* Pods-ezk_marathon_training.release.xcconfig */,
-				D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */,
-				A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */,
-				F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */,
-				9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */,
+				036289F2EE353CED636D058D /* Pods-ezk_marathon_training.debug.xcconfig */,
+				13312DA1B3E1B4678FF1CFDE /* Pods-ezk_marathon_training.release.xcconfig */,
+				E71BBBD61E8DEE024FFF69B3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */,
+				64111CAD50614B13916FA9E1 /* Pods-ezk_marathon_trainingTests.release.xcconfig */,
+				17573D530B3B0954C48FC7AF /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */,
+				9F68537AC86B3614CDD7F60D /* Pods-ezk_marathon_trainingUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -117,9 +142,9 @@
 		BFE011B085B9FC02FB591C1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				481E556683D351EDC32E33A7 /* Pods_ezk_marathon_training.framework */,
-				07EBBA14865157B3933A7D43 /* Pods_ezk_marathon_trainingTests.framework */,
-				224C0F99035BA7400A148F9E /* Pods_ezk_marathon_trainingUITests.framework */,
+				1A75655F87FB09AAC3A5B48F /* Pods_ezk_marathon_training.framework */,
+				530E61B65ECA853A7FE18906 /* Pods_ezk_marathon_trainingTests.framework */,
+				AB89948F1F94AF1CF9DB0212 /* Pods_ezk_marathon_trainingUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -127,12 +152,13 @@
 		D478849D1F7A688B009E2720 = {
 			isa = PBXGroup;
 			children = (
+				D4248D4D1F8FBEBC001112B6 /* ItemPurchaseView.swift */,
 				D47884A81F7A688B009E2720 /* ezk_marathon_training */,
 				D47884BD1F7A688C009E2720 /* ezk_marathon_trainingTests */,
 				D47884C81F7A688C009E2720 /* ezk_marathon_trainingUITests */,
 				D47884A71F7A688B009E2720 /* Products */,
-				A1FF49E4513B79DBE8B6D5D1 /* Pods */,
 				BFE011B085B9FC02FB591C1E /* Frameworks */,
+				8819B9D46DDF04ECD5E1FE88 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -149,11 +175,12 @@
 		D47884A81F7A688B009E2720 /* ezk_marathon_training */ = {
 			isa = PBXGroup;
 			children = (
+				D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */,
+				D4248D451F8FBE9B001112B6 /* HomeViewController.swift */,
+				D4248D461F8FBE9B001112B6 /* Homedata.swift */,
+				D4248D471F8FBE9B001112B6 /* ezk_marathon_training.entitlements */,
+				D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */,
 				D40B93201F821F6E00FDD362 /* misson.storyboard */,
-				C49D42BF1F82524F00051D5A /* MissionViewController.swift */,
-				C49D42C11F82531900051D5A /* WeeklyMissionViewController.swift */,
-				C49D42C31F82533600051D5A /* MainMissionViewController.swift */,
-				C49D42BD1F8251DB00051D5A /* DailyMissionViewController.swift */,
 				D47884A91F7A688B009E2720 /* AppDelegate.swift */,
 				D47884AB1F7A688B009E2720 /* ViewController.swift */,
 				A03391B41F823F240036DE2B /* BorderView.swift */,
@@ -199,12 +226,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D47884CE1F7A688C009E2720 /* Build configuration list for PBXNativeTarget "ezk_marathon_training" */;
 			buildPhases = (
-				376DD5EAFA9C81FE7CDEEF65 /* [CP] Check Pods Manifest.lock */,
+				AFAE6A55FF8EF561437536CE /* [CP] Check Pods Manifest.lock */,
 				D47884A21F7A688B009E2720 /* Sources */,
 				D47884A31F7A688B009E2720 /* Frameworks */,
 				D47884A41F7A688B009E2720 /* Resources */,
-				4B1DFAF8F8D78BD54EFF23F3 /* [CP] Embed Pods Frameworks */,
-				DDFA8A5C4E3D9FC9E82DCFB8 /* [CP] Copy Pods Resources */,
+				94C4B1EC2C9F7E0888D0B283 /* [CP] Embed Pods Frameworks */,
+				BEC0ED9D205F9345621060C4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -314,6 +341,7 @@
 				D40B93251F82213F00FDD362 /* battle.storyboard in Resources */,
 				A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */,
 				D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */,
+				D4248D491F8FBE9B001112B6 /* ItemPurchaseView.xib in Resources */,
 				D47884B11F7A688B009E2720 /* Assets.xcassets in Resources */,
 				D47884AF1F7A688B009E2720 /* Main.storyboard in Resources */,
 				D40B93271F82224B00FDD362 /* home.storyboard in Resources */,
@@ -367,25 +395,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		376DD5EAFA9C81FE7CDEEF65 /* [CP] Check Pods Manifest.lock */ = {
+		8D37806C7C9D09FE16227C0C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Check Pods Manifest.lock";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ezk_marathon_training-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4B1DFAF8F8D78BD54EFF23F3 /* [CP] Embed Pods Frameworks */ = {
+		94C4B1EC2C9F7E0888D0B283 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -403,19 +428,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_training/Pods-ezk_marathon_training-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		8D37806C7C9D09FE16227C0C /* [CP] Copy Pods Resources */ = {
+		AFAE6A55FF8EF561437536CE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
-			name = "[CP] Copy Pods Resources";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ezk_marathon_training-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BEBAEEA410426EDC630AFE17 /* [CP] Check Pods Manifest.lock */ = {
@@ -436,7 +464,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		DDFA8A5C4E3D9FC9E82DCFB8 /* [CP] Copy Pods Resources */ = {
+		BEC0ED9D205F9345621060C4 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -491,16 +519,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4248D4C1F8FBE9B001112B6 /* DailyMissionViewController.swift in Sources */,
+				D4248D4E1F8FBEBC001112B6 /* ItemPurchaseView.swift in Sources */,
 				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
 				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
+				D4248D4A1F8FBE9B001112B6 /* HomeViewController.swift in Sources */,
 				A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
-				C49D42C01F82524F00051D5A /* MissionViewController.swift in Sources */,
-				C49D42C41F82533600051D5A /* MainMissionViewController.swift in Sources */,
-				C49D42BE1F8251DB00051D5A /* DailyMissionViewController.swift in Sources */,
-				C49D42C21F82531900051D5A /* WeeklyMissionViewController.swift in Sources */,
 				D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */,
+				D4248D4B1F8FBE9B001112B6 /* Homedata.swift in Sources */,
 				A038DFC91F8245CD00A146DB /* battle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -653,7 +681,7 @@
 		};
 		D47884CF1F7A688C009E2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF0674828A42E0F3C0103950 /* Pods-ezk_marathon_training.debug.xcconfig */;
+			baseConfigurationReference = 036289F2EE353CED636D058D /* Pods-ezk_marathon_training.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -669,7 +697,7 @@
 		};
 		D47884D01F7A688C009E2720 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 695C238AB18095805423FC3C /* Pods-ezk_marathon_training.release.xcconfig */;
+			baseConfigurationReference = 13312DA1B3E1B4678FF1CFDE /* Pods-ezk_marathon_training.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -685,7 +713,7 @@
 		};
 		D47884D21F7A688C009E2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D1F172567EA0ED8A3F0B28A3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */;
+			baseConfigurationReference = E71BBBD61E8DEE024FFF69B3 /* Pods-ezk_marathon_trainingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -700,7 +728,7 @@
 		};
 		D47884D31F7A688C009E2720 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A71FF69C2D73C315496422DC /* Pods-ezk_marathon_trainingTests.release.xcconfig */;
+			baseConfigurationReference = 64111CAD50614B13916FA9E1 /* Pods-ezk_marathon_trainingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -715,7 +743,7 @@
 		};
 		D47884D51F7A688C009E2720 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F6F45B1A80D4940C2697C6F4 /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */;
+			baseConfigurationReference = 17573D530B3B0954C48FC7AF /* Pods-ezk_marathon_trainingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
@@ -731,7 +759,7 @@
 		};
 		D47884D61F7A688C009E2720 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9FCF60A3D9EBE7D3AB522A99 /* Pods-ezk_marathon_trainingUITests.release.xcconfig */;
+			baseConfigurationReference = 9F68537AC86B3614CDD7F60D /* Pods-ezk_marathon_trainingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = "";
