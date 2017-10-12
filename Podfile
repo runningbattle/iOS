@@ -6,7 +6,7 @@ target 'ezk_marathon_training' do
   use_frameworks!
 
   # Pods for ezk_marathon_training
-  pod 'PagingMenuController'
+  #pod 'PagingMenuController'
 
   target 'ezk_marathon_trainingTests' do
     inherit! :search_paths
