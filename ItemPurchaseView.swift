@@ -17,25 +17,43 @@ class ItemPurchaseView: UIView {
     var healcount: Int = 5
     var attackcount: Int = 5
     var defensecount: Int = 5
+    var coin: Int = 100
 
-    
-    @IBAction func useHealItem(_ sender: Any) {
-//        if(Int <= 100){
-//            print("コインが足りません")
-//        }
-        
+    @IBAction func buyHealItem(_ sender: Any) {
+        let alert : UIAlertController
+        if coin < 10{
+            alert = UIAlertController(title: "コインが足りません", message: "",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+            } else if coin >= 10{
+                healcount += 1
+                coin = coin - 10
+            }
     }
     
-    @IBAction func useAttackItem(_ sender: Any) {
-      healcount -= 1
+    @IBAction func buyAttackItem(_ sender: Any) {
+        let alert : UIAlertController
+        if coin < 10{
+            alert = UIAlertController(title: "コインが足りません", message: "",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        } else if coin >= 10{
+            attackcount += 1
+            coin = coin - 10
+        }
     }
     
-    @IBAction func useDefenseItem(_ sender: Any) {
-      attackcount -= 1
+    @IBAction func buyDefenseItem(_ sender: Any) {
+        let alert : UIAlertController
+        if coin < 10{
+            alert = UIAlertController(title: "コインが足りません", message: "",
+                                      preferredStyle: UIAlertControllerStyle.alert)
+        } else if coin >= 10{
+            defensecount += 1
+            coin = coin - 10
+        }
+
     }
     
     @IBAction func closeItem(_ sender: Any) {
-      defensecount -= 1
         self.removeFromSuperview()
         
     }
