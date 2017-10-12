@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class BattleViewController: UIViewController {
 
@@ -67,6 +68,15 @@ class BattleViewController: UIViewController {
     @IBAction func tapedEnemyButton(_ sender: Any) {
         enemy_hp -= 5
         enemyHpGuage.progress = enemy_hp / enemy_max_hp
+        
+        //効果音再生
+        let url = Bundle.main.url(forResource: "middle_punch1", withExtension: "mp3")!
+        var soundID: SystemSoundID = 0
+        AudioServicesCreateSystemSoundID(url as CFURL, &soundID)
+        AudioServicesAddSystemSoundCompletion(soundID, nil, nil, { (soundID, _) in
+            AudioServicesDisposeSystemSoundID(soundID)
+        }, nil)
+        AudioServicesPlaySystemSound(soundID)
         
         //label表示
         let str = String(format: "%.0f", enemy_hp)
@@ -129,7 +139,6 @@ class BattleViewController: UIViewController {
                 self.guageInit()
                 //item画面も閉じる
                 self.itemPopUpView?.removeFromSuperview()
-
             })
             alert.addAction(defaultAction)
             

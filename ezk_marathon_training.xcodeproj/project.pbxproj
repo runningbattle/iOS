@@ -12,6 +12,7 @@
 		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
 		A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A084B1EC1F8CE97F00AAA808 /* View.xib */; };
 		A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */; };
+		A0E979EC1F8FA73800501D59 /* middle_punch1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A0E979EB1F8FA73800501D59 /* middle_punch1.mp3 */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
 		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
@@ -50,6 +51,7 @@
 		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		A084B1EC1F8CE97F00AAA808 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
+		A0E979EB1F8FA73800501D59 /* middle_punch1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = middle_punch1.mp3; path = ../../../Downloads/middle_punch1.mp3; sourceTree = "<group>"; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
 		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				D40B93221F82206100FDD362 /* others.storyboard */,
 				D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */,
 				D47884B01F7A688B009E2720 /* Assets.xcassets */,
+				A0E979EB1F8FA73800501D59 /* middle_punch1.mp3 */,
 				D47884B21F7A688B009E2720 /* LaunchScreen.storyboard */,
 				D47884B51F7A688B009E2720 /* Info.plist */,
 				D40B93201F821F6E00FDD362 /* misson.storyboard */,
@@ -269,6 +272,7 @@
 				D40B93231F82206100FDD362 /* others.storyboard in Resources */,
 				D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */,
 				D40B93251F82213F00FDD362 /* battle.storyboard in Resources */,
+				A0E979EC1F8FA73800501D59 /* middle_punch1.mp3 in Resources */,
 				A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */,
 				D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */,
 				D47884B11F7A688B009E2720 /* Assets.xcassets in Resources */,
