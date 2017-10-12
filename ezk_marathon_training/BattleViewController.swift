@@ -45,8 +45,7 @@ class BattleViewController: UIViewController {
         enemyHpGuage.progress = 1.0
         youHpGuage.progress = 1.0
         
-        let enemy_max_str = String(format: "%.0f", enemy_max_hp)
-        enemyMaxHpLabel.text = enemy_max_str
+        enemyMaxHpLabel.text = String(format: "%.0f", enemy_max_hp)
         let you_max_str = String(format: "%.0f", you_max_hp)
         youMaxHpLabel.text = you_max_str
         let enemy_str = String(format: "%.0f", enemy_max_hp)
