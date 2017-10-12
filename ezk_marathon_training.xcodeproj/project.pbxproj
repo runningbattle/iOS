@@ -9,7 +9,10 @@
 /* Begin PBXBuildFile section */
 		7B18D2C97B511544C58D23ED /* Pods_ezk_marathon_trainingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 530E61B65ECA853A7FE18906 /* Pods_ezk_marathon_trainingTests.framework */; };
 		A03391B51F823F240036DE2B /* BorderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03391B41F823F240036DE2B /* BorderView.swift */; };
-		A038DFC91F8245CD00A146DB /* battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFC81F8245CD00A146DB /* battle.swift */; };
+		A03507D81F8FD18400659707 /* ItemPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03507D41F8FD18400659707 /* ItemPurchaseView.swift */; };
+		A03507D91F8FD18400659707 /* MainMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03507D51F8FD18400659707 /* MainMissionViewController.swift */; };
+		A03507DA1F8FD18400659707 /* MissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03507D61F8FD18400659707 /* MissionViewController.swift */; };
+		A03507DB1F8FD18400659707 /* WeeklyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03507D71F8FD18400659707 /* WeeklyMissionViewController.swift */; };
 		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
 		A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A084B1EC1F8CE97F00AAA808 /* View.xib */; };
 		A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */; };
@@ -21,10 +24,7 @@
 		D40B93271F82224B00FDD362 /* home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93261F82224B00FDD362 /* home.storyboard */; };
 		D4248D491F8FBE9B001112B6 /* ItemPurchaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */; };
 		D4248D4A1F8FBE9B001112B6 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D451F8FBE9B001112B6 /* HomeViewController.swift */; };
-		D4248D4B1F8FBE9B001112B6 /* Homedata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D461F8FBE9B001112B6 /* Homedata.swift */; };
 		D4248D4C1F8FBE9B001112B6 /* DailyMissionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */; };
-		D4248D4E1F8FBEBC001112B6 /* ItemPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4248D4D1F8FBEBC001112B6 /* ItemPurchaseView.swift */; };
-		D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */; };
 		D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884A91F7A688B009E2720 /* AppDelegate.swift */; };
 		D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884AB1F7A688B009E2720 /* ViewController.swift */; };
 		D47884AF1F7A688B009E2720 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D47884AD1F7A688B009E2720 /* Main.storyboard */; };
@@ -33,8 +33,8 @@
 		D47884BF1F7A688C009E2720 /* ezk_marathon_trainingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884BE1F7A688C009E2720 /* ezk_marathon_trainingTests.swift */; };
 		D47884CA1F7A688C009E2720 /* ezk_marathon_trainingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D47884C91F7A688C009E2720 /* ezk_marathon_trainingUITests.swift */; };
 		E7148F2B72D9E1AB03912AB8 /* Pods_ezk_marathon_training.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A75655F87FB09AAC3A5B48F /* Pods_ezk_marathon_training.framework */; };
-		EA7FA4521C41B93134E8C901 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
-		EFD0DCC7D46255AD791526AE /* BuildFile in Frameworks */ = {isa = PBXBuildFile; };
+		EA7FA4521C41B93134E8C901 /* (null) in Frameworks */ = {isa = PBXBuildFile; };
+		EFD0DCC7D46255AD791526AE /* (null) in Frameworks */ = {isa = PBXBuildFile; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,7 +63,10 @@
 		64111CAD50614B13916FA9E1 /* Pods-ezk_marathon_trainingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingTests/Pods-ezk_marathon_trainingTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F68537AC86B3614CDD7F60D /* Pods-ezk_marathon_trainingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ezk_marathon_trainingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ezk_marathon_trainingUITests/Pods-ezk_marathon_trainingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A03391B41F823F240036DE2B /* BorderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderView.swift; sourceTree = "<group>"; };
-		A038DFC81F8245CD00A146DB /* battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = battle.swift; sourceTree = "<group>"; };
+		A03507D41F8FD18400659707 /* ItemPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPurchaseView.swift; sourceTree = "<group>"; };
+		A03507D51F8FD18400659707 /* MainMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMissionViewController.swift; sourceTree = "<group>"; };
+		A03507D61F8FD18400659707 /* MissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MissionViewController.swift; sourceTree = "<group>"; };
+		A03507D71F8FD18400659707 /* WeeklyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeeklyMissionViewController.swift; sourceTree = "<group>"; };
 		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		A084B1EC1F8CE97F00AAA808 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
@@ -75,11 +78,8 @@
 		D40B93261F82224B00FDD362 /* home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = home.storyboard; sourceTree = "<group>"; };
 		D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPurchaseView.xib; sourceTree = "<group>"; };
 		D4248D451F8FBE9B001112B6 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		D4248D461F8FBE9B001112B6 /* Homedata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homedata.swift; sourceTree = "<group>"; };
 		D4248D471F8FBE9B001112B6 /* ezk_marathon_training.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = ezk_marathon_training.entitlements; sourceTree = "<group>"; };
 		D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyMissionViewController.swift; sourceTree = "<group>"; };
-		D4248D4D1F8FBEBC001112B6 /* ItemPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPurchaseView.swift; sourceTree = "<group>"; };
-		D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gamescene_home.swift; sourceTree = "<group>"; };
 		D47884A61F7A688B009E2720 /* ezk_marathon_training.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ezk_marathon_training.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D47884A91F7A688B009E2720 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D47884AB1F7A688B009E2720 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EA7FA4521C41B93134E8C901 /* BuildFile in Frameworks */,
+				EA7FA4521C41B93134E8C901 /* (null) in Frameworks */,
 				7B18D2C97B511544C58D23ED /* Pods_ezk_marathon_trainingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EFD0DCC7D46255AD791526AE /* BuildFile in Frameworks */,
+				EFD0DCC7D46255AD791526AE /* (null) in Frameworks */,
 				C8049B5384F07C230E73F2DD /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +139,60 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		A03507D31F8FD09A00659707 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				D40B93201F821F6E00FDD362 /* misson.storyboard */,
+				D47884AD1F7A688B009E2720 /* Main.storyboard */,
+				D40B93261F82224B00FDD362 /* home.storyboard */,
+				D40B93241F82213F00FDD362 /* battle.storyboard */,
+				D40B931E1F821C4900FDD362 /* ranking.storyboard */,
+				D40B93221F82206100FDD362 /* others.storyboard */,
+				D47884B21F7A688B009E2720 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboard;
+			sourceTree = "<group>";
+		};
+		A03507DC1F8FD20E00659707 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A03507D51F8FD18400659707 /* MainMissionViewController.swift */,
+				D47884AB1F7A688B009E2720 /* ViewController.swift */,
+				A03507D61F8FD18400659707 /* MissionViewController.swift */,
+				D4248D451F8FBE9B001112B6 /* HomeViewController.swift */,
+				D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */,
+				A038DFCA1F825F4100A146DB /* BattleViewController.swift */,
+				A03507D71F8FD18400659707 /* WeeklyMissionViewController.swift */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		A03507DD1F8FD22800659707 /* Xib */ = {
+			isa = PBXGroup;
+			children = (
+				A084B1EC1F8CE97F00AAA808 /* View.xib */,
+				D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */,
+			);
+			name = Xib;
+			sourceTree = "<group>";
+		};
+		A03507DF1F8FD24C00659707 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		A03507E01F8FD27600659707 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A03507D41F8FD18400659707 /* ItemPurchaseView.swift */,
+				A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */,
+				A03391B41F823F240036DE2B /* BorderView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		BFE011B085B9FC02FB591C1E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,7 +206,6 @@
 		D478849D1F7A688B009E2720 = {
 			isa = PBXGroup;
 			children = (
-				D4248D4D1F8FBEBC001112B6 /* ItemPurchaseView.swift */,
 				D47884A81F7A688B009E2720 /* ezk_marathon_training */,
 				D47884BD1F7A688C009E2720 /* ezk_marathon_trainingTests */,
 				D47884C81F7A688C009E2720 /* ezk_marathon_trainingUITests */,
@@ -175,27 +228,14 @@
 		D47884A81F7A688B009E2720 /* ezk_marathon_training */ = {
 			isa = PBXGroup;
 			children = (
-				D4248D441F8FBE9B001112B6 /* ItemPurchaseView.xib */,
-				D4248D451F8FBE9B001112B6 /* HomeViewController.swift */,
-				D4248D461F8FBE9B001112B6 /* Homedata.swift */,
+				A03507E01F8FD27600659707 /* View */,
+				A03507DF1F8FD24C00659707 /* Model */,
+				A03507DD1F8FD22800659707 /* Xib */,
+				A03507DC1F8FD20E00659707 /* ViewController */,
 				D4248D471F8FBE9B001112B6 /* ezk_marathon_training.entitlements */,
-				D4248D481F8FBE9B001112B6 /* DailyMissionViewController.swift */,
-				D40B93201F821F6E00FDD362 /* misson.storyboard */,
+				A03507D31F8FD09A00659707 /* Storyboard */,
 				D47884A91F7A688B009E2720 /* AppDelegate.swift */,
-				D47884AB1F7A688B009E2720 /* ViewController.swift */,
-				A03391B41F823F240036DE2B /* BorderView.swift */,
-				D47884AD1F7A688B009E2720 /* Main.storyboard */,
-				D40B93261F82224B00FDD362 /* home.storyboard */,
-				D40B93241F82213F00FDD362 /* battle.storyboard */,
-				A084B1EC1F8CE97F00AAA808 /* View.xib */,
-				A038DFC81F8245CD00A146DB /* battle.swift */,
-				A038DFCA1F825F4100A146DB /* BattleViewController.swift */,
-				A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */,
-				D40B931E1F821C4900FDD362 /* ranking.storyboard */,
-				D40B93221F82206100FDD362 /* others.storyboard */,
-				D42668671F7E5A2A00E02A1B /* Gamescene_home.swift */,
 				D47884B01F7A688B009E2720 /* Assets.xcassets */,
-				D47884B21F7A688B009E2720 /* LaunchScreen.storyboard */,
 				D47884B51F7A688B009E2720 /* Info.plist */,
 			);
 			path = ezk_marathon_training;
@@ -443,7 +483,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BEBAEEA410426EDC630AFE17 /* [CP] Check Pods Manifest.lock */ = {
@@ -461,7 +501,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BEC0ED9D205F9345621060C4 /* [CP] Copy Pods Resources */ = {
@@ -509,7 +549,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run \'pod install\' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -520,16 +560,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D4248D4C1F8FBE9B001112B6 /* DailyMissionViewController.swift in Sources */,
-				D4248D4E1F8FBEBC001112B6 /* ItemPurchaseView.swift in Sources */,
+				A03507D81F8FD18400659707 /* ItemPurchaseView.swift in Sources */,
+				A03507DB1F8FD18400659707 /* WeeklyMissionViewController.swift in Sources */,
 				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
 				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
 				D4248D4A1F8FBE9B001112B6 /* HomeViewController.swift in Sources */,
 				A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
-				D42668681F7E5A2A00E02A1B /* Gamescene_home.swift in Sources */,
-				D4248D4B1F8FBE9B001112B6 /* Homedata.swift in Sources */,
-				A038DFC91F8245CD00A146DB /* battle.swift in Sources */,
+				A03507D91F8FD18400659707 /* MainMissionViewController.swift in Sources */,
+				A03507DA1F8FD18400659707 /* MissionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
