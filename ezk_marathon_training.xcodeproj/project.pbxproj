@@ -13,6 +13,7 @@
 		D404EE2A1F889A270035C55A /* Homedata.swift in Sources */ = {isa = PBXBuildFile; fileRef = D404EE291F889A270035C55A /* Homedata.swift */; };
 		D40737A01F8E2E1B0054531B /* ItemPurchaseView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D407379F1F8E2E1B0054531B /* ItemPurchaseView.xib */; };
 		D40737A21F8E32020054531B /* ItemPurchaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D40737A11F8E32020054531B /* ItemPurchaseView.swift */; };
+		D4079C5F1F8F9E82007FB5EE /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4079C5E1F8F9E82007FB5EE /* ItemPopUpView.swift */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
 		D40B93231F82206100FDD362 /* others.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93221F82206100FDD362 /* others.storyboard */; };
@@ -54,6 +55,7 @@
 		D404EE291F889A270035C55A /* Homedata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Homedata.swift; sourceTree = "<group>"; };
 		D407379F1F8E2E1B0054531B /* ItemPurchaseView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemPurchaseView.xib; sourceTree = "<group>"; };
 		D40737A11F8E32020054531B /* ItemPurchaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPurchaseView.swift; sourceTree = "<group>"; };
+		D4079C5E1F8F9E82007FB5EE /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
 		D40B93221F82206100FDD362 /* others.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = others.storyboard; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		D47884A81F7A688B009E2720 /* ezk_marathon_training */ = {
 			isa = PBXGroup;
 			children = (
+				D4079C5E1F8F9E82007FB5EE /* ItemPopUpView.swift */,
 				D48C3B801F87B048009DF36B /* ezk_marathon_training.entitlements */,
 				D47884A91F7A688B009E2720 /* AppDelegate.swift */,
 				D47884AB1F7A688B009E2720 /* ViewController.swift */,
@@ -326,6 +329,7 @@
 			files = (
 				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
 				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
+				D4079C5F1F8F9E82007FB5EE /* ItemPopUpView.swift in Sources */,
 				D40737A21F8E32020054531B /* ItemPurchaseView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
