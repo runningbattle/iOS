@@ -16,6 +16,7 @@
 		A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A038DFCA1F825F4100A146DB /* BattleViewController.swift */; };
 		A084B1ED1F8CE97F00AAA808 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = A084B1EC1F8CE97F00AAA808 /* View.xib */; };
 		A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */; };
+		A0CF54471F9108C600F66A52 /* AutoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0CF54461F9108C600F66A52 /* AutoLayout.swift */; };
 		C8049B5384F07C230E73F2DD /* Pods_ezk_marathon_trainingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB89948F1F94AF1CF9DB0212 /* Pods_ezk_marathon_trainingUITests.framework */; };
 		D40B931F1F821C4900FDD362 /* ranking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B931E1F821C4900FDD362 /* ranking.storyboard */; };
 		D40B93211F821F6E00FDD362 /* misson.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D40B93201F821F6E00FDD362 /* misson.storyboard */; };
@@ -70,6 +71,7 @@
 		A038DFCA1F825F4100A146DB /* BattleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BattleViewController.swift; sourceTree = "<group>"; };
 		A084B1EC1F8CE97F00AAA808 /* View.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPopUpView.swift; sourceTree = "<group>"; };
+		A0CF54461F9108C600F66A52 /* AutoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AutoLayout.swift; sourceTree = "<group>"; };
 		AB89948F1F94AF1CF9DB0212 /* Pods_ezk_marathon_trainingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ezk_marathon_trainingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D40B931E1F821C4900FDD362 /* ranking.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ranking.storyboard; sourceTree = "<group>"; };
 		D40B93201F821F6E00FDD362 /* misson.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = misson.storyboard; sourceTree = "<group>"; };
@@ -189,6 +191,7 @@
 				A03507D41F8FD18400659707 /* ItemPurchaseView.swift */,
 				A084B1EE1F8CF19B00AAA808 /* ItemPopUpView.swift */,
 				A03391B41F823F240036DE2B /* BorderView.swift */,
+				A0CF54461F9108C600F66A52 /* AutoLayout.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -565,6 +568,7 @@
 				A038DFCB1F825F4100A146DB /* BattleViewController.swift in Sources */,
 				A03391B51F823F240036DE2B /* BorderView.swift in Sources */,
 				D47884AC1F7A688B009E2720 /* ViewController.swift in Sources */,
+				A0CF54471F9108C600F66A52 /* AutoLayout.swift in Sources */,
 				D4248D4A1F8FBE9B001112B6 /* HomeViewController.swift in Sources */,
 				A084B1EF1F8CF19B00AAA808 /* ItemPopUpView.swift in Sources */,
 				D47884AA1F7A688B009E2720 /* AppDelegate.swift in Sources */,
