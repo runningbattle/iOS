@@ -46,12 +46,9 @@ class BattleViewController: UIViewController {
         youHpGuage.progress = 1.0
         
         enemyMaxHpLabel.text = String(format: "%.0f", enemy_max_hp)
-        let you_max_str = String(format: "%.0f", you_max_hp)
-        youMaxHpLabel.text = you_max_str
-        let enemy_str = String(format: "%.0f", enemy_max_hp)
-        enemyHpLabel.text = enemy_str
-        let you_str = String(format: "%.0f", you_max_hp)
-        youHpLabel.text = you_str
+        youMaxHpLabel.text = String(format: "%.0f", you_max_hp)
+        enemyHpLabel.text = String(format: "%.0f", enemy_max_hp)
+        youHpLabel.text = String(format: "%.0f", you_max_hp)
 
         itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
         
@@ -68,8 +65,7 @@ class BattleViewController: UIViewController {
         enemyHpGuage.progress = enemy_hp / enemy_max_hp
         
         //label表示
-        let str = String(format: "%.0f", enemy_hp)
-        enemyHpLabel.text = str
+        enemyHpLabel.text = String(format: "%.0f", enemy_hp)
         
         //勝ち
         if enemyHpGuage.progress == 0.0{
@@ -91,8 +87,7 @@ class BattleViewController: UIViewController {
         youHpGuage.progress = you_hp / you_max_hp
         
         //label表示
-        let str = String(format: "%.0f", you_hp)
-        youHpLabel.text = str
+        youHpLabel.text = String(format: "%.0f", you_hp)
 
         
         //負け
