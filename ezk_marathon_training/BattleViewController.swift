@@ -5,8 +5,8 @@
 //  Created by Risa Ezoe on 2017/10/02.
 //  Copyright © 2017年 Kazuki Kanamaru. All rights reserved.
 //
-
 import UIKit
+
 
 enum BattleStatus{
     case stop
@@ -27,12 +27,12 @@ class BattleViewController: UIViewController {
     
     var timer = Timer()
     var hpTimer = Timer()
-    var count: Float = 10
+    var count: Int = 10
     var enemyMaxHp: Float = 50
     var enemyHp: Float = 50
     var youMaxHp: Float = 50
     var youHp: Float = 50
-    var maxCount: Float = 10
+    var maxCount: Int = 10
     var itemPopUpView: ItemPopUpView? = nil
 
     
@@ -40,8 +40,8 @@ class BattleViewController: UIViewController {
         super.loadView()
         youHpGuage.transform = CGAffineTransform(scaleX:1.0, y:3.0)
         // 反時計回りに90度回転して表示する
-        let sanbai = CGAffineTransform(scaleX:1.0, y:3.0)
-        enemyHpGuage.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI)).concatenating(sanbai)
+        let triple = CGAffineTransform(scaleX:1.0, y:3.0)
+        enemyHpGuage.transform = CGAffineTransform(rotationAngle: CGFloat(-M_PI)).concatenating(triple)
         enemyMaxHpLabel.text = String(format: "%.0f", enemyMaxHp)
         youMaxHpLabel.text = String(format: "%.0f", youMaxHp)
         enemyHpLabel.text = String(format: "%.0f", enemyMaxHp)
@@ -53,6 +53,13 @@ class BattleViewController: UIViewController {
         enemyHpGuage.progress = 1.0
         youHpGuage.progress = 1.0
         itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
+        guageInit()
+        if count <= 0 {
+            timer.invalidate()
+        }
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+        hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -61,20 +68,12 @@ class BattleViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        guageInit()
-        if count <= 0 {
-            timer.invalidate()
-        }
-        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
-        hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
-    }
+            }
     
     
     @IBAction func tapedEnemyButton(_ sender: Any) {
         enemyHp -= 5
         enemyHpGuage.progress = enemyHp / enemyMaxHp
-        
-        //label表示
         enemyHpLabel.text = String(format: "%.0f", enemyHp)
         
         //勝ち
@@ -82,6 +81,7 @@ class BattleViewController: UIViewController {
             battleAlert(.win)
         }
     }
+    
     @IBAction func tappedStop(_ sender: Any) {
         battleAlert(.stop)
     }
@@ -99,8 +99,6 @@ extension BattleViewController{
     func youDamageHp(timer : Timer) {
         youHp -= 2
         youHpGuage.progress = youHp / youMaxHp
-        
-        //label表示
         youHpLabel.text = String(format: "%.0f", youHp)
         
         //負け
@@ -146,39 +144,21 @@ extension BattleViewController{
         alert.addAction(cancelAction)
         self.present(alert, animated: true, completion: nil)
     }
-    
-    
-    fileprivate func customHandler(_ status: BattleStatus){
-        switch status {
-        case .win:
-            self.guageInit()
-            //item画面も閉じる
-            self.itemPopUpView?.removeFromSuperview()
-        case .lose:
-            self.guageInit()
-            //item画面も閉じる
-            self.itemPopUpView?.removeFromSuperview()
-        case .stop:
-            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
-            self.hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
-        }
-    }
 }
+
+
 
 extension BattleViewController{
     
     // タイマー起動のための中身
     func onUpdate(timer : Timer){
-        // カウントの増減を実施
         count -= 1
-        // 桁数を指定するコード
-        let str = String(format: "%.0f", count)
-        // countLabelに表示するコード
-        timerLabel.text = str
+        let str = String(count)
         if count <= 0{
             timer.invalidate()    //タイマーを止めるコード
             battleAlert(.lose)
         }
+        timerLabel.text = str
     }
 
     //初期化
@@ -199,5 +179,26 @@ extension BattleViewController{
         self.timerLabel.text = String(format: "%.0f", self.maxCount)
         self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
         self.hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+    }
+}
+
+
+///MARK - FilePrivates
+extension BattleViewController{
+    
+    fileprivate func customHandler(_ status: BattleStatus){
+        switch status {
+        case .win:
+            self.guageInit()
+            //item画面も閉じる
+            self.itemPopUpView?.removeFromSuperview()
+        case .lose:
+            self.guageInit()
+            //item画面も閉じる
+            self.itemPopUpView?.removeFromSuperview()
+        case .stop:
+            self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+            self.hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+        }
     }
 }
