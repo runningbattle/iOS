@@ -33,6 +33,8 @@ class BattleViewController: UIViewController {
     var youMaxHp: Float = 50
     var youHp: Float = 50
     var maxCount: Int = 10
+    var attackPoint: Float = 5
+    var defencePoint: Float = 15
     var itemPopUpView: ItemPopUpView? = nil
 
     
@@ -76,7 +78,7 @@ class BattleViewController: UIViewController {
     
     
     @IBAction func tapedEnemyButton(_ sender: Any) {
-        enemyHp -= 5
+        enemyHp -= attackPoint
         enemyHpGuage.progress = enemyHp / enemyMaxHp
         enemyHpLabel.text = String(format: "%.0f", enemyHp)
         
@@ -101,7 +103,7 @@ class BattleViewController: UIViewController {
 extension BattleViewController{
     
     func youDamageHp(timer : Timer) {
-        youHp -= 2
+        youHp -= defencePoint
         youHpGuage.progress = youHp / youMaxHp
         youHpLabel.text = String(format: "%.0f", youHp)
         
@@ -112,8 +114,9 @@ extension BattleViewController{
     }
     
     func battleAlert(_ status : BattleStatus){
-        hpTimer.invalidate()       //timer停止
-        timer.invalidate()       //timer停止
+        //timer停止
+        hpTimer.invalidate()
+        timer.invalidate()
 
         let alert : UIAlertController
         let alertTitle: String!
@@ -141,7 +144,6 @@ extension BattleViewController{
         
         // 終了ボタン
         let cancelAction: UIAlertAction = UIAlertAction(title: "終了", style: UIAlertActionStyle.cancel, handler:{
-            // ボタンが押された時の処理（クロージャ実装）
             (action: UIAlertAction!) -> Void in
             //画面遷移
         })
@@ -149,7 +151,6 @@ extension BattleViewController{
         self.present(alert, animated: true, completion: nil)
     }
 }
-
 
 
 extension BattleViewController{
@@ -199,7 +200,6 @@ extension BattleViewController{
             self.itemPopUpView?.removeFromSuperview()
         case .lose:
             self.guageInit()
-            //item画面も閉じる
             self.itemPopUpView?.removeFromSuperview()
         case .stop:
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)

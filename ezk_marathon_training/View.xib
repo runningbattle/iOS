@@ -22,25 +22,25 @@
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLK-nQ-fEi">
                             <rect key="frame" x="98" y="13" width="56" height="52"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="item2"/>
+                            <state key="normal" title="attack"/>
                             <connections>
-                                <action selector="item2Button:" destination="iN0-l3-epB" eventType="touchUpInside" id="JbB-Vm-ruR"/>
+                                <action selector="attackButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="SV3-tQ-ebD"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JS6-Hh-F7M">
                             <rect key="frame" x="26" y="13" width="56" height="52"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="item1"/>
+                            <state key="normal" title="heal"/>
                             <connections>
-                                <action selector="item1Button:" destination="iN0-l3-epB" eventType="touchUpInside" id="G2g-CA-qPB"/>
+                                <action selector="healButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="4hW-cH-Uba"/>
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hsY-aV-YPk">
                             <rect key="frame" x="173" y="13" width="56" height="52"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="item3"/>
+                            <state key="normal" title="defence"/>
                             <connections>
-                                <action selector="item3Button:" destination="iN0-l3-epB" eventType="touchUpInside" id="HQz-No-7WY"/>
+                                <action selector="defenceButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="n4l-TN-Ktu"/>
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tCY-vW-pUb">
@@ -70,9 +70,9 @@
             </subviews>
             <gestureRecognizers/>
             <connections>
-                <outlet property="attackCount" destination="chT-lg-4Fc" id="N5u-fz-N5r"/>
-                <outlet property="defenceCount" destination="DrQ-oE-TiK" id="Jsh-Sr-8th"/>
-                <outlet property="healCount" destination="tCY-vW-pUb" id="HFE-Hg-LUi"/>
+                <outlet property="attackCountLabel" destination="chT-lg-4Fc" id="6L9-85-EQK"/>
+                <outlet property="defenceCountLabel" destination="DrQ-oE-TiK" id="JTw-G5-1XW"/>
+                <outlet property="healCountLabel" destination="tCY-vW-pUb" id="qjq-Ld-kMY"/>
                 <outletCollection property="gestureRecognizers" destination="P6G-i8-XBa" appends="YES" id="gth-LI-MCg"/>
             </connections>
             <point key="canvasLocation" x="-288.5" y="-705.5"/>
