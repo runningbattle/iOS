@@ -54,11 +54,12 @@ class BattleViewController: UIViewController {
         youHpGuage.progress = 1.0
         itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
         guageInit()
+//        count = maxCount
         if count <= 0 {
             timer.invalidate()
         }
-        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
-        hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+//        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+//        hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
 
     }
     
@@ -66,6 +67,12 @@ class BattleViewController: UIViewController {
         super.didReceiveMemoryWarning()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        timerLabel.text = String(format: "%d", maxCount)
+        print(maxCount)
+
+    }
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
             }
@@ -176,8 +183,8 @@ extension BattleViewController{
         
         //timer初期化
         self.count = self.maxCount
-        self.timerLabel.text = String(format: "%.0f", self.maxCount)
-        self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
+        self.timerLabel.text = String(format: "%d", self.maxCount)
+        self.timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
         self.hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
     }
 }
