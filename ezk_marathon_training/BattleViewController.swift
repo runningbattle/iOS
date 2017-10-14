@@ -33,7 +33,7 @@ class BattleViewController: UIViewController {
     var youMaxHp: Float = 50
     var youHp: Float = 50
     var maxCount: Int = 10
-    var attackPoint: Float = 5
+    var attackPoint: Float = 7
     var defencePoint: Float = 15
     var itemPopUpView: ItemPopUpView? = nil
 
@@ -80,6 +80,9 @@ class BattleViewController: UIViewController {
     @IBAction func tapedEnemyButton(_ sender: Any) {
         enemyHp -= attackPoint
         enemyHpGuage.progress = enemyHp / enemyMaxHp
+        if enemyHp <= 0{
+            enemyHp = 0
+        }
         enemyHpLabel.text = String(format: "%.0f", enemyHp)
         
         //勝ち
@@ -105,8 +108,10 @@ extension BattleViewController{
     func youDamageHp(timer : Timer) {
         youHp -= defencePoint
         youHpGuage.progress = youHp / youMaxHp
+        if youHp <= 0{
+            youHp = 0
+        }
         youHpLabel.text = String(format: "%.0f", youHp)
-        
         //負け
         if youHpGuage.progress == 0.0{
             battleAlert(.lose)

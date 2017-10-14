@@ -26,7 +26,6 @@ class ItemPopUpView :  UIView {
     var defenceCount: Int = 5
     var battleViewController: BattleViewController? = nil
     
-    
     @IBAction func tapScreen(_ sender: Any) {
         self.removeFromSuperview()
     }
