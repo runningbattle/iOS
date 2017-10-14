@@ -54,13 +54,11 @@ class BattleViewController: UIViewController {
         youHpGuage.progress = 1.0
         itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
         guageInit()
-//        count = maxCount
         if count <= 0 {
             timer.invalidate()
         }
 //        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
 //        hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
-
     }
     
     override func didReceiveMemoryWarning() {
@@ -69,13 +67,12 @@ class BattleViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(true)
-        timerLabel.text = String(format: "%d", maxCount)
-        print(maxCount)
-
     }
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-            }
+        timerLabel.text = String(format: "%d", maxCount)
+    }
     
     
     @IBAction func tapedEnemyButton(_ sender: Any) {
@@ -162,7 +159,8 @@ extension BattleViewController{
         count -= 1
         let str = String(count)
         if count <= 0{
-            timer.invalidate()    //タイマーを止めるコード
+            //タイマーを止めるコード
+            timer.invalidate()
             battleAlert(.lose)
         }
         timerLabel.text = str
