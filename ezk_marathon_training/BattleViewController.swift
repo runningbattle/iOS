@@ -16,7 +16,6 @@ enum BattleStatus{
 
 class BattleViewController: UIViewController {
 
-//    @IBOutlet weak var youHpView: UIView!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var enemyHpGuage: UIProgressView!
     @IBOutlet weak var youHpGuage: UIProgressView!
@@ -27,15 +26,15 @@ class BattleViewController: UIViewController {
     
     var timer = Timer()
     var hpTimer = Timer()
-    var count: Int = 10
+    var count: Int = 30
     var enemyMaxHp: Float = 50
     var enemyHp: Float = 50
-    var youMaxHp: Float = 50
+    var youMaxHp: Float = 300
     var youHp: Float = 50
-    var maxCount: Int = 10
+    var maxCount: Int = 30
     var attackPoint: Float = 7
     var defencePoint: Float = 15
-    var itemPopUpView: ItemPopUpView? = nil
+    var itemPopUpView: ItemPopUpView?
 
     
     override func loadView() {
@@ -52,6 +51,7 @@ class BattleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         enemyHpGuage.progress = 1.0
         youHpGuage.progress = 1.0
         itemPopUpView = UINib(nibName: "View", bundle: nil).instantiate(withOwner: self,options: nil)[0] as? ItemPopUpView
@@ -59,18 +59,9 @@ class BattleViewController: UIViewController {
         if count <= 0 {
             timer.invalidate()
         }
-//        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
-//        hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
+        itemPopUpView?.delegate = self
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(true)
-    }
-    
+        
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         timerLabel.text = String(format: "%d", maxCount)
@@ -105,6 +96,18 @@ class BattleViewController: UIViewController {
 ///MARK: - Private
 extension BattleViewController{
     
+    // タイマー起動のための中身
+    func onUpdate(timer : Timer){
+        count -= 1
+        let str = String(count)
+        if count <= 0{
+            //タイマーを止めるコード
+            timer.invalidate()
+            battleAlert(.lose)
+        }
+        timerLabel.text = str
+    }
+    
     func youDamageHp(timer : Timer) {
         youHp -= defencePoint
         youHpGuage.progress = youHp / youMaxHp
@@ -118,60 +121,6 @@ extension BattleViewController{
         }
     }
     
-    func battleAlert(_ status : BattleStatus){
-        //timer停止
-        hpTimer.invalidate()
-        timer.invalidate()
-
-        let alert : UIAlertController
-        let alertTitle: String!
-        let alertActionTitle: String!
-        //再挑戦ボタン
-        switch  status{
-        case .lose:
-            alertTitle = "ゲームオーバー"
-            alertActionTitle = "再挑戦"
-        case .win:
-            alertTitle = "勝利"
-            alertActionTitle = "次へ"
-        case .stop:
-            alertTitle = "一時停止"
-            alertActionTitle = "再開"
-        }
-        
-        alert = UIAlertController(title: alertTitle, message: "", preferredStyle:  UIAlertControllerStyle.alert)
-        let defaultAction: UIAlertAction = UIAlertAction(title: alertActionTitle, style: UIAlertActionStyle.default, handler:{
-            // ボタンが押された時の処理（クロージャ実装）
-            (action: UIAlertAction!) -> Void in
-            self.customHandler(status)
-        })
-        alert.addAction(defaultAction)
-        
-        // 終了ボタン
-        let cancelAction: UIAlertAction = UIAlertAction(title: "終了", style: UIAlertActionStyle.cancel, handler:{
-            (action: UIAlertAction!) -> Void in
-            //画面遷移
-        })
-        alert.addAction(cancelAction)
-        self.present(alert, animated: true, completion: nil)
-    }
-}
-
-
-extension BattleViewController{
-    
-    // タイマー起動のための中身
-    func onUpdate(timer : Timer){
-        count -= 1
-        let str = String(count)
-        if count <= 0{
-            //タイマーを止めるコード
-            timer.invalidate()
-            battleAlert(.lose)
-        }
-        timerLabel.text = str
-    }
-
     //初期化
     func guageInit(){
         
@@ -210,5 +159,58 @@ extension BattleViewController{
             self.timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(BattleViewController.onUpdate(timer:)), userInfo: nil, repeats: true)
             self.hpTimer = Timer.scheduledTimer(timeInterval: 1.7, target: self, selector: #selector(BattleViewController.youDamageHp(timer:)), userInfo: nil, repeats: true)
         }
+    }
+    
+    func battleAlert(_ status : BattleStatus){
+        //timer停止
+        hpTimer.invalidate()
+        timer.invalidate()
+        
+        let alert : UIAlertController
+        let alertTitle: String!
+        let alertActionTitle: String!
+        //再挑戦ボタン
+        switch  status{
+        case .lose:
+            alertTitle = "ゲームオーバー"
+            alertActionTitle = "再挑戦"
+        case .win:
+            alertTitle = "勝利"
+            alertActionTitle = "次へ"
+        case .stop:
+            alertTitle = "一時停止"
+            alertActionTitle = "再開"
+        }
+        
+        alert = UIAlertController(title: alertTitle, message: "", preferredStyle:  UIAlertControllerStyle.alert)
+        let defaultAction: UIAlertAction = UIAlertAction(title: alertActionTitle, style: UIAlertActionStyle.default, handler:{
+            // ボタンが押された時の処理（クロージャ実装）
+            (action: UIAlertAction!) -> Void in
+            self.customHandler(status)
+        })
+        alert.addAction(defaultAction)
+        
+        // 終了ボタン
+        let cancelAction: UIAlertAction = UIAlertAction(title: "終了", style: UIAlertActionStyle.cancel, handler:{
+            (action: UIAlertAction!) -> Void in
+            //画面遷移
+        })
+        alert.addAction(cancelAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+}
+
+extension BattleViewController: ItemPopUpViewDelegate{
+    
+    func tapped(_ status: ItemStatus) {
+        switch status{
+         case .heal:
+            self.youHp += 20
+            self.youHpLabel.text = String(format: "%.0f", self.youHp)
+         case .attack:
+            self.attackPoint *= 1.5
+         case .defence:
+            self.defencePoint *= 1.5
+         }
     }
 }

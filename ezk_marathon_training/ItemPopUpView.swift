@@ -15,6 +15,10 @@ enum ItemStatus{
     case defence
 }
 
+protocol ItemPopUpViewDelegate {
+    func tapped(_ status: ItemStatus)
+}
+
 class ItemPopUpView :  UIView {
     
     @IBOutlet weak var healCountLabel: UILabel!
@@ -25,51 +29,43 @@ class ItemPopUpView :  UIView {
     var attackCount: Int = 5
     var defenceCount: Int = 5
     var battleViewController: BattleViewController? = nil
-    
+    var delegate: ItemPopUpViewDelegate?
+        
     @IBAction func tapScreen(_ sender: Any) {
         self.removeFromSuperview()
     }
     
     //heal
     @IBAction func healButton(_ sender: Any) {
-        useItem(.heal)
+        //useItem(.heal)
         if healCount != 0{
             healCount -= 1
             let str = String(format: "%d", healCount)
             healCountLabel.text = str
             self.removeFromSuperview()
         }
+        self.delegate?.tapped(.heal)
     }
+    
     //attack
     @IBAction func attackButton(_ sender: Any) {
-        useItem(.attack)
         if attackCount != 0{
             attackCount -= 1
             let str = String(format: "%d", attackCount)
             attackCountLabel.text = str
             self.removeFromSuperview()
         }
+        self.delegate?.tapped(.attack)
     }
+    
     //defence
     @IBAction func defenceButton(_ sender: Any) {
-        useItem(.defence)
         if defenceCount != 0{
             defenceCount -= 1
             let str = String(format: "%d", defenceCount)
             defenceCountLabel.text = str
             self.removeFromSuperview()
         }
+        self.delegate?.tapped(.defence)
     }
-    
-    func useItem(_ status : ItemStatus){
-        switch status{
-        case .heal:
-            battleViewController?.youHp += 20
-        case .attack:
-            battleViewController?.attackPoint *= 1.5
-        case .defence:
-            battleViewController?.defencePoint *= 1.5
-        }
-    }
-    
 }
