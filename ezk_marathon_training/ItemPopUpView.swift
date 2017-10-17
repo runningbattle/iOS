@@ -43,8 +43,8 @@ class ItemPopUpView :  UIView {
             let str = String(format: "%d", healCount)
             healCountLabel.text = str
             self.removeFromSuperview()
+            self.delegate?.tapped(.heal)
         }
-        self.delegate?.tapped(.heal)
     }
     
     //attack
@@ -54,8 +54,8 @@ class ItemPopUpView :  UIView {
             let str = String(format: "%d", attackCount)
             attackCountLabel.text = str
             self.removeFromSuperview()
+            self.delegate?.tapped(.attack)
         }
-        self.delegate?.tapped(.attack)
     }
     
     //defence
@@ -65,7 +65,7 @@ class ItemPopUpView :  UIView {
             let str = String(format: "%d", defenceCount)
             defenceCountLabel.text = str
             self.removeFromSuperview()
+            self.delegate?.tapped(.defence)
         }
-        self.delegate?.tapped(.defence)
     }
 }

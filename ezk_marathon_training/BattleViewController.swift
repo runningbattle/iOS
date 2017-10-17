@@ -207,6 +207,7 @@ extension BattleViewController: ItemPopUpViewDelegate{
          case .heal:
             self.youHp += 20
             self.youHpLabel.text = String(format: "%.0f", self.youHp)
+            self.youHpGuage.progress = self.youHp / self.youMaxHp
          case .attack:
             self.attackPoint *= 1.5
          case .defence:
