@@ -207,6 +207,7 @@
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="coin_label" destination="FlP-IN-B6I" id="K4R-gj-C6h"/>
+                        <outlet property="distanceLabel" destination="gmK-Fr-a8t" id="Olv-5v-rqr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TM4-ne-ddz" userLabel="First Responder" sceneMemberID="firstResponder"/>
